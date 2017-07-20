@@ -1,0 +1,154 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('readxml:server');
+var http = require('http');
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+var server = http.createServer(app);
+
+/**
+ * Listen on provided port, on all network interfaces.
+ */
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/**
+ * Normalize a port into a number, string, or false.
+ */
+
+function normalizePort(val) {
+    var port = parseInt(val, 10);
+
+    if (isNaN(port)) {
+        // named pipe
+        return val;
+    }
+
+    if (port >= 0) {
+        // port number
+        return port;
+    }
+
+    return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+    if (error.syscall !== 'listen') {
+        throw error;
+    }
+
+    var bind = typeof port === 'string'
+        ? 'Pipe ' + port
+        : 'Port ' + port;
+
+    // handle specific listen errors with friendly messages
+    switch (error.code) {
+        case 'EACCES':
+            console.error(bind + ' requires elevated privileges');
+            process.exit(1);
+            break;
+        case 'EADDRINUSE':
+            console.error(bind + ' is already in use');
+            process.exit(1);
+            break;
+        default:
+            throw error;
+    }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+    var addr = server.address();
+    var bind = typeof addr === 'string'
+        ? 'pipe ' + addr
+        : 'port ' + addr.port;
+    debug('Listening on ' + bind);
+}
+
+var itemContents = {
+    linkCategory: "",
+    link: "",
+    title: "",
+    description: "",
+    img: "",
+    pubDate: "",
+}
+require('../parser/vnexpress')();
+
+var x = '';
+console.log(x == "s")
+
+
+var request = require('request'),
+    cheerio = require('cheerio');
+var xml2js = require('xml2js');
+var parser = new xml2js.Parser();
+var ind = 0;
+// var sizeCategory = listCate.item.length;
+var arrCate = new Array();
+
+function readHTMLItemVnExpress(index_con) {
+    var jsdom = require("jsdom/lib/old-api.js");
+    jsdom.env(
+        "http://video.vnexpress.net/tin-tuc/xa-hoi/7-du-an-nghin-ty-o-ha-noi-co-sai-pham-3616226.html",
+        ["http://code.jquery.com/jquery.js"],
+        function (err, window) {
+
+            var content = window.$("#left_calculator").html();
+            if (content == undefined) {
+                try {
+                    content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
+                    s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
+                    s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
+                    s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
+                    s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
+                    linkVideo = s720;
+                    if (linkVideo == '') linkVideo = s480;
+                    else if (linkVideo == '') linkVideo = s360;
+                    else if (linkVideo == '') linkVideo = s240;
+                    console.log(linkVideo);
+                } catch (error) {
+                    console.log(error);
+                    try {
+
+                    }
+                    catch (e) {
+                        if (index_con < arrCate.length - 1) {
+                            readHTMLItemVnExpress(index_con + 1)
+                            return;
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    );
+}
+
+// readHTMLItemVnExpress(0);
