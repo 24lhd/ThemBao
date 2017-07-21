@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/vnexpress.js" afterPath="$PROJECT_DIR$/parser/vnexpress.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -47,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
+            <state relative-caret-position="244">
               <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
               <folding>
                 <element signature="e#15#2638#0" expanded="false" />
                 <element signature="e#5738#8182#0" expanded="false" />
-                <marker date="1500606072875" expanded="true" signature="6971:6996" ph="..." />
-                <marker date="1500606072875" expanded="true" signature="7439:7821" ph="..." />
-                <marker date="1500606072875" expanded="true" signature="7446:7789" ph="..." />
-                <marker date="1500606072875" expanded="true" signature="7510:7781" ph="..." />
-                <marker date="1500606072875" expanded="true" signature="7526:7588" ph="{...}" />
-                <marker date="1500606072875" expanded="true" signature="7601:7693" ph="{...}" />
-                <marker date="1500606072875" expanded="true" signature="7707:7769" ph="{...}" />
+                <marker date="1500606549741" expanded="true" signature="6971:6996" ph="..." />
+                <marker date="1500606549741" expanded="true" signature="7439:7821" ph="..." />
+                <marker date="1500606549741" expanded="true" signature="7446:7789" ph="..." />
+                <marker date="1500606549741" expanded="true" signature="7510:7781" ph="..." />
+                <marker date="1500606549741" expanded="true" signature="7526:7588" ph="{...}" />
+                <marker date="1500606549741" expanded="true" signature="7601:7693" ph="{...}" />
+                <marker date="1500606549741" expanded="true" signature="7707:7769" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state relative-caret-position="170">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -184,8 +184,8 @@
         <option value="$PROJECT_DIR$/parser/run.js" />
         <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
       </list>
     </option>
   </component>
@@ -469,7 +469,7 @@
       <workItem from="1500562245549" duration="3352000" />
       <workItem from="1500590537832" duration="65000" />
       <workItem from="1500591834133" duration="2464000" />
-      <workItem from="1500597121783" duration="8548000" />
+      <workItem from="1500597121783" duration="9034000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -520,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500605917503</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="thêm database mlab">
+      <created>1500606084854</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1500606084854</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46453000" />
+    <option name="totallyTimeSpent" value="46939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -592,13 +599,13 @@
           <folding>
             <element signature="e#15#2638#0" expanded="false" />
             <element signature="e#5738#8182#0" expanded="false" />
-            <marker date="1500606072875" expanded="true" signature="6971:6996" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7439:7821" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7446:7789" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7510:7781" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7526:7588" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7601:7693" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7707:7769" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="6971:6996" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7439:7821" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7446:7789" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7510:7781" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7526:7588" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7601:7693" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7707:7769" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -650,13 +657,13 @@
           <folding>
             <element signature="e#15#2638#0" expanded="false" />
             <element signature="e#5738#8182#0" expanded="false" />
-            <marker date="1500606072875" expanded="true" signature="6971:6996" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7439:7821" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7446:7789" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7510:7781" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7526:7588" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7601:7693" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7707:7769" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="6971:6996" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7439:7821" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7446:7789" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7510:7781" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7526:7588" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7601:7693" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7707:7769" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -979,29 +986,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
+        <state relative-caret-position="244">
           <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="220" selection-end-column="5" />
           <folding>
             <element signature="e#15#2638#0" expanded="false" />
             <element signature="e#5738#8182#0" expanded="false" />
-            <marker date="1500606072875" expanded="true" signature="6971:6996" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7439:7821" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7446:7789" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7510:7781" ph="..." />
-            <marker date="1500606072875" expanded="true" signature="7526:7588" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7601:7693" ph="{...}" />
-            <marker date="1500606072875" expanded="true" signature="7707:7769" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="6971:6996" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7439:7821" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7446:7789" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7510:7781" ph="..." />
+            <marker date="1500606549741" expanded="true" signature="7526:7588" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7601:7693" ph="{...}" />
+            <marker date="1500606549741" expanded="true" signature="7707:7769" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>

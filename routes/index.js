@@ -7,7 +7,7 @@ router.get('/', function (req, res, next) {
 
 
     try{
-        require('../parser/vnexpress')();
+        // require('../parser/vnexpress')();
     }catch (e){}
     res.render('index', {title: 'Express'});
 });
