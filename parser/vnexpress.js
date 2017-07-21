@@ -90,10 +90,10 @@ var listCate = {
 }
 module.exports = function () {
     var mongo = require('mongodb');
-    var MongoClient = require('mongodb').MongoClient;
-    var url = "mongodb://localhost:27017/mydb";
     var request = require('request')
     var cheerio = require('cheerio')
+    var insertContents = require('../mongo/insertContents')
+    var insertDes = require('../mongo/insertDes')
     var xml2js = require('xml2js')
     var parser = new xml2js.Parser()
     var ind = 0;
@@ -101,6 +101,7 @@ module.exports = function () {
     var arrCate = new Array();
 
     function chayCategory(indexCategory) {
+        console.log("chayCategory "+indexCategory)
         var linkCategory = listCate.item[indexCategory].link
         request(
             linkCategory,
@@ -124,28 +125,15 @@ module.exports = function () {
                                         img: itemInCate.description[0].split("src=\"")[1].split('" ></a>')[0],
                                         pubDate: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
                                     }
-                                    MongoClient.connect(url, function (err, db) {
-                                        if (err) throw err;
-                                        var query = { linkContents: ObjItemInCate.linkContents };
-                                        db.collection("Des").find(query).toArray(function(err, result) {
-                                            if (err) throw err;
-                                            if (result[0]==null){
-                                                db.collection("Des").insertOne(ObjItemInCate, function (err, res) {
-                                                    if (err) throw err;
-                                                    arrCate.push(ObjItemInCate.linkContents)
-                                                });
-                                            }
-                                            db.close();
-                                        });
-
-                                    });
-
-
-
+                                    insertDes(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
+                                        console.log("push")
+                                        arrCate.push(ObjItemInCate.linkContents)
+                                    })
                                     if (indexItemDes < arrItemDes.length - 1) {
                                         chayItemDes(indexItemDes + 1);
                                     }
                                 } catch (exc) {
+                                    console.log(exc)
                                 }
                             }
 
@@ -166,6 +154,7 @@ module.exports = function () {
     chayCategory(0);
 
     function readHTMLItemVnExpress(index_con) {
+        console.log('readHTMLItemVnExpress '+index_con)
         var jsdom = require("jsdom/lib/old-api.js");
         jsdom.env(
             arrCate[index_con],
@@ -221,17 +210,11 @@ module.exports = function () {
 <body>${content}</body>
 </html>`,
                 }
-                MongoClient.connect(url, function (err, db) {
-                    if (err) throw err;
-                    console.log("Contents" + arrCate[index_con]);
-                    db.collection("Contents").insertOne(contents, function (err, res) {
-                        if (err) throw err;
-                        console.log("1 record Contents");
-                        db.close();
-                        if (index_con < arrCate.length - 1)
-                            readHTMLItemVnExpress(index_con + 1)
-                        return;
-                    });
+                insertContents(contents, {linkContents: contents.linkContents}, function () {
+                    console.log('insertContents')
+                    if (index_con < arrCate.length - 1)
+                        readHTMLItemVnExpress(index_con + 1)
+                    return;
                 });
             }
         );
