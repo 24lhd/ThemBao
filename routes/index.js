@@ -5,7 +5,10 @@ var router = express.Router();
 router.get('/', function (req, res, next) {
     console.log("exe")
 
-    require('../parser/vnexpress')();
+
+    try{
+        require('../parser/vnexpress')();
+    }catch (e){}
     res.render('index', {title: 'Express'});
 });
 
