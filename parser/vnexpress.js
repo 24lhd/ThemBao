@@ -152,7 +152,7 @@ module.exports = function () {
     }
 
     chayCategory(0);
-
+try {
     function readHTMLItemVnExpress(index_con) {
         console.log('readHTMLItemVnExpress '+index_con)
         var jsdom = require("jsdom/lib/old-api.js");
@@ -219,4 +219,6 @@ module.exports = function () {
             }
         );
     }
+}catch (e){}
+
 }
