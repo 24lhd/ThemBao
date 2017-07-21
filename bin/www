@@ -97,10 +97,20 @@ var itemContents = {
     img: "",
     pubDate: "",
 }
-require('../parser/vnexpress')();
+// require('../parser/vnexpress')();
 // require('../mongo/motangan').findQueryLimit({},100,function (res) {
 //     console.log(res);
 // })
 // require('../mongo/motangan').countQuery({id:0},function (res) {
 //     console.log(res);
 // })
+
+var date=new Date();
+console.log(date.getDate())
+console.log(date.getDay())
+console.log(date.getHours())
+console.log(date.getMinutes())
+console.log(date.getTime())
+var timeOld=9;
+
+
