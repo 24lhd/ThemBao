@@ -180,6 +180,7 @@ module.exports = function () {
 
                     var content = window.$("#left_calculator").html();
                     var title = window.$(".title_news").html();
+                    if (title==undefined) title=window.$("title").html();
                     console.log(title);
                     if (content == undefined) {
                         try {
