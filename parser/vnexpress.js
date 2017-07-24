@@ -138,20 +138,20 @@ module.exports = function () {
                                     console.log("second " + ObjItemInCate.pubDate.second)
                                     try {
 
-                                        readHTMLItemVnExpress(ObjItemInCate.linkContents,function (flag) {
-                                            if (flag){
+                                        readHTMLItemVnExpress(ObjItemInCate.linkContents, function (flag) {
+                                            if (flag) {
                                                 motangan.insertOne(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
                                                     console.log("push")
                                                     if (indexItemDes < arrItemDes.length - 1) {
                                                         chayItemDes(indexItemDes + 1);
                                                     }
                                                 })
-                                            }else  if (indexItemDes < arrItemDes.length - 1) {
+                                            } else if (indexItemDes < arrItemDes.length - 1) {
                                                 chayItemDes(indexItemDes + 1);
                                             }
 
                                         })
-                                    }catch (e){
+                                    } catch (e) {
                                         if (indexItemDes < arrItemDes.length - 1) {
                                             chayItemDes(indexItemDes + 1);
                                         }
@@ -167,7 +167,7 @@ module.exports = function () {
                             if (indexCategory < sizeCategory - 1) {
                                 chayCategory(indexCategory + 1)
                             } else {
-
+                                chayCategory(0);
                                 // require('../mongo/motangan').findQueryLimit({"pubDate.day": new Date().getDay()}, 1000, function (res) {
                                 //     arrMotaNgan = res;
                                 //     console.log("Xong arrMotaNgan" + arrMotaNgan.length)
@@ -185,7 +185,8 @@ module.exports = function () {
     var arrMotaNgan = new Array();
     chayCategory(0);
     var jsdom = require("jsdom/lib/old-api.js");
-    function readHTMLItemVnExpress(index_con,call) {
+
+    function readHTMLItemVnExpress(index_con, call) {
         console.log('readHTMLItemVnExpress ' + index_con)
         console.log('arrMotaNgan ' + arrMotaNgan.length)
         jsdom.env(
@@ -195,7 +196,7 @@ module.exports = function () {
             function (err, window) {
                 var content = window.$("#left_calculator").html();
                 var title = window.$(".title_news").html();
-                if (title==undefined) title=`<h1>${window.$("title").html()}</h1>`
+                if (title == undefined) title = `<h1>${window.$("title").html()}</h1>`
                 console.log(title);
                 if (content == undefined) {
                     try {
@@ -209,7 +210,7 @@ module.exports = function () {
                         else if (linkVideo == '') linkVideo = s360;
                         else if (linkVideo == '') linkVideo = s240;
                         content = `<video src="${linkVideo}"controls></video>`
-                    }catch (e){
+                    } catch (e) {
                         // if (index_con < arrMotaNgan.length - 1)
                         //     readHTMLItemVnExpress(index_con + 1)
                         // else chayCategory(0);
@@ -254,6 +255,12 @@ module.exports = function () {
         .title_news{
             display: none;
         }
+        #box_tinlienquan{
+            display: none;
+        }
+          .block_goithutoasoan{
+            display: none;
+        }
     </style>
 </head>
 <body>${title}${content}</body>
@@ -261,13 +268,13 @@ module.exports = function () {
                 }
                 noidung.insertOne(contents,
                     // {"linkContents": arrMotaNgan[index_con].linkContents}
-                    {"linkContents":index_con}
+                    {"linkContents": index_con}
                     , function () {
                         call(true);
-                    // if (index_con < arrMotaNgan.length - 1)
-                    //     readHTMLItemVnExpress(index_con + 1)
-                    // else chayCategory(0);
-                });
+                        // if (index_con < arrMotaNgan.length - 1)
+                        //     readHTMLItemVnExpress(index_con + 1)
+                        // else chayCategory(0);
+                    });
             }
         );
     }
