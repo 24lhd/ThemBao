@@ -136,12 +136,28 @@ module.exports = function () {
                                         },
                                     }
                                     console.log("second " + ObjItemInCate.pubDate.second)
-                                    motangan.insertOne(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
-                                        console.log("push")
-                                    })
-                                    if (indexItemDes < arrItemDes.length - 1) {
-                                        chayItemDes(indexItemDes + 1);
+                                    try {
+
+                                        readHTMLItemVnExpress(ObjItemInCate.linkContents,function (flag) {
+                                            if (flag){
+                                                motangan.insertOne(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
+                                                    console.log("push")
+                                                    if (indexItemDes < arrItemDes.length - 1) {
+                                                        chayItemDes(indexItemDes + 1);
+                                                    }
+                                                })
+                                            }else  if (indexItemDes < arrItemDes.length - 1) {
+                                                chayItemDes(indexItemDes + 1);
+                                            }
+
+                                        })
+                                    }catch (e){
+                                        if (indexItemDes < arrItemDes.length - 1) {
+                                            chayItemDes(indexItemDes + 1);
+                                        }
                                     }
+
+
                                 } catch (exc) {
                                     console.log(exc)
                                 }
@@ -152,11 +168,11 @@ module.exports = function () {
                                 chayCategory(indexCategory + 1)
                             } else {
 
-                                require('../mongo/motangan').findQueryLimit({"pubDate.day": new Date().getDay()}, 1000, function (res) {
-                                    arrMotaNgan = res;
-                                    console.log("Xong arrMotaNgan" + arrMotaNgan.length)
-                                    readHTMLItemVnExpress(0);
-                                })
+                                // require('../mongo/motangan').findQueryLimit({"pubDate.day": new Date().getDay()}, 1000, function (res) {
+                                //     arrMotaNgan = res;
+                                //     console.log("Xong arrMotaNgan" + arrMotaNgan.length)
+                                //     readHTMLItemVnExpress(0);
+                                // })
 
                             }
                         }
@@ -169,11 +185,12 @@ module.exports = function () {
     var arrMotaNgan = new Array();
     chayCategory(0);
     var jsdom = require("jsdom/lib/old-api.js");
-    function readHTMLItemVnExpress(index_con) {
+    function readHTMLItemVnExpress(index_con,call) {
         console.log('readHTMLItemVnExpress ' + index_con)
         console.log('arrMotaNgan ' + arrMotaNgan.length)
         jsdom.env(
-            arrMotaNgan[index_con].linkContents,
+            // arrMotaNgan[index_con].linkContents,
+            index_con,
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
                 var content = window.$("#left_calculator").html();
@@ -193,14 +210,15 @@ module.exports = function () {
                         else if (linkVideo == '') linkVideo = s240;
                         content = `<video src="${linkVideo}"controls></video>`
                     }catch (e){
-                        if (index_con < arrMotaNgan.length - 1)
-                            readHTMLItemVnExpress(index_con + 1)
-                        else chayCategory(0);
+                        // if (index_con < arrMotaNgan.length - 1)
+                        //     readHTMLItemVnExpress(index_con + 1)
+                        // else chayCategory(0);
                     }
 
                 }
                 var contents = {
-                    linkContents: arrMotaNgan[index_con].linkContents,
+                    // linkContents: arrMotaNgan[index_con].linkContents,
+                    index_con,
                     contentHTML: `
                     <!DOCTYPE html>
 <html lang="en">
@@ -241,10 +259,14 @@ module.exports = function () {
 <body>${title}${content}</body>
 </html>`,
                 }
-                noidung.insertOne(contents, {"linkContents": arrMotaNgan[index_con].linkContents}, function () {
-                    if (index_con < arrMotaNgan.length - 1)
-                        readHTMLItemVnExpress(index_con + 1)
-                    else chayCategory(0);
+                noidung.insertOne(contents,
+                    // {"linkContents": arrMotaNgan[index_con].linkContents}
+                    {"linkContents":index_con}
+                    , function () {
+                        call(true);
+                    // if (index_con < arrMotaNgan.length - 1)
+                    //     readHTMLItemVnExpress(index_con + 1)
+                    // else chayCategory(0);
                 });
             }
         );
