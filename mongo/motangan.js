@@ -11,6 +11,9 @@ module.exports = {
                         callback();
                         db.close();
                     });
+                }else {
+                    callback();
+                    db.close();
                 }
             })
         })
