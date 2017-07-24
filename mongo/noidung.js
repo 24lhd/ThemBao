@@ -1,5 +1,5 @@
 var Mongo = require('../config/MongoConnect');
-var CollName = 'Contents'
+var CollName = 'noidung'
 module.exports = {
     insertOne: function (content, query, callback) {
         Mongo(function (db) {

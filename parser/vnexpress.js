@@ -92,16 +92,15 @@ module.exports = function () {
     var mongo = require('mongodb');
     var request = require('request')
     var cheerio = require('cheerio')
-    var insertContents = require('../mongo/insertContents')
-    var insertDes = require('../mongo/insertDes')
+    var noidung = require('../mongo/noidung')
+    var motangan = require('../mongo/motangan')
     var xml2js = require('xml2js')
     var parser = new xml2js.Parser()
     var ind = 0;
     var sizeCategory = listCate.item.length;
-    var arrCate = new Array();
 
     function chayCategory(indexCategory) {
-        console.log("chayCategory "+indexCategory)
+        console.log("chayCategory " + indexCategory)
         var linkCategory = listCate.item[indexCategory].link
         request(
             linkCategory,
@@ -117,17 +116,28 @@ module.exports = function () {
                                 try {
                                     var linkCategory = data.rss.channel[0].link[0]
                                     var itemInCate = arrItemDes[indexItemDes];
+                                    var date = new Date();
                                     var ObjItemInCate = {
                                         linkCategory: linkCategory,
                                         linkContents: itemInCate.link[0],
                                         title: itemInCate.title[0],
                                         description: itemInCate.description[0].split("</br>")[1],
                                         img: itemInCate.description[0].split("src=\"")[1].split('" ></a>')[0],
-                                        pubDate: new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''),
+                                        pubDate: {
+                                            second: new Date().getSeconds(),
+                                            minute: new Date().getMinutes(),
+                                            hour: new Date().getHours(),
+                                            day: new Date().getDay(),
+                                            month: new Date().getMonth(),
+                                            year: new Date().getYear(),
+                                            fullYear: new Date().getFullYear(),
+
+
+                                        },
                                     }
-                                    insertDes(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
+                                    console.log("second " + ObjItemInCate.pubDate.second)
+                                    motangan.insertOne(ObjItemInCate, {linkContents: ObjItemInCate.linkContents}, function () {
                                         console.log("push")
-                                        arrCate.push(ObjItemInCate.linkContents)
                                     })
                                     if (indexItemDes < arrItemDes.length - 1) {
                                         chayItemDes(indexItemDes + 1);
@@ -141,8 +151,14 @@ module.exports = function () {
                             if (indexCategory < sizeCategory - 1) {
                                 chayCategory(indexCategory + 1)
                             } else {
-                                console.log("Xong" + arrCate.length)
-                                readHTMLItemVnExpress(0);
+
+                                require('../mongo/motangan').findQueryLimit({"pubDate.day": new Date().getDay()}, 1000, function (res) {
+                                    console.log("Xong arrMotaNgan" + arrMotaNgan.length)
+                                    console.log("Xong arrMotaNgan" + res)
+                                    arrMotaNgan = res;
+                                    readHTMLItemVnExpress(0);
+                                })
+
                             }
                         }
                     )
@@ -151,41 +167,44 @@ module.exports = function () {
         )
     }
 
+    var arrMotaNgan = new Array();
     chayCategory(0);
-try {
-    function readHTMLItemVnExpress(index_con) {
-        console.log('readHTMLItemVnExpress '+index_con)
-        var jsdom = require("jsdom/lib/old-api.js");
-        jsdom.env(
-            arrCate[index_con],
-            ["http://code.jquery.com/jquery.js"],
-            function (err, window) {
+    try {
+        function readHTMLItemVnExpress(index_con) {
+            console.log('readHTMLItemVnExpress ' + index_con)
+            var jsdom = require("jsdom/lib/old-api.js");
+            jsdom.env(
+                arrMotaNgan[index_con].linkContents,
+                ["http://code.jquery.com/jquery.js"],
+                function (err, window) {
 
-                var content = window.$("#left_calculator").html();
-                if (content == undefined) {
-                    try {
-                        content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
-                        s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
-                        s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
-                        s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
-                        s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
-                        linkVideo = s720;
-                        if (linkVideo == '') linkVideo = s480;
-                        else if (linkVideo == '') linkVideo = s360;
-                        else if (linkVideo == '') linkVideo = s240;
-                        content = `<video src="${linkVideo}"
+                    var content = window.$("#left_calculator").html();
+                    var title = window.$(".title_news").html();
+                    console.log(title);
+                    if (content == undefined) {
+                        try {
+                            content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
+                            s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
+                            s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
+                            s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
+                            s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
+                            linkVideo = s720;
+                            if (linkVideo == '') linkVideo = s480;
+                            else if (linkVideo == '') linkVideo = s360;
+                            else if (linkVideo == '') linkVideo = s240;
+                            content = `<video src="${linkVideo}"
        controls>
 </video>`
-                    } catch (error) {
-                        if (index_con < arrCate.length - 1) {
-                            readHTMLItemVnExpress(index_con + 1)
-                            return;
+                        } catch (error) {
+                            if (index_con < arrMotaNgan.length - 1) {
+                                readHTMLItemVnExpress(index_con + 1)
+                                return;
+                            }
                         }
                     }
-                }
-                var contents = {
-                    linkContents: arrCate[index_con],
-                    contentHTML: `
+                    var contents = {
+                        linkContents: arrMotaNgan[index_con].linkContents,
+                        contentHTML: `
                     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -205,20 +224,36 @@ try {
             width: 100%;
             margin: auto;
         }
+          .block_timer_share{
+            display: none;
+        }
+        .block_timer {
+            display: none;
+        }
+        .social_share {
+            display: none;
+        }
+        .xemthem_new_ver  {
+            display: none;
+        }
+        .title_news{
+            display: none;
+        }
     </style>
 </head>
-<body>${content}</body>
+<body>${title}${content}</body>
 </html>`,
+                    }
+                    noidung.insertOne(contents, {linkContents: contents.linkContents}, function () {
+                        console.log('insertContents')
+                        if (index_con < arrMotaNgan.length - 1)
+                            readHTMLItemVnExpress(index_con + 1)
+                        else chayCategory(0);
+                    });
                 }
-                insertContents(contents, {linkContents: contents.linkContents}, function () {
-                    console.log('insertContents')
-                    if (index_con < arrCate.length - 1)
-                        readHTMLItemVnExpress(index_con + 1)
-                    return;
-                });
-            }
-        );
+            );
+        }
+    } catch (e) {
     }
-}catch (e){}
 
 }

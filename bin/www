@@ -97,7 +97,7 @@ var itemContents = {
     img: "",
     pubDate: "",
 }
-// require('../parser/vnexpress')();
+require('../parser/vnexpress')();
 // require('../mongo/motangan').findQueryLimit({},100,function (res) {
 //     console.log(res);
 // })
