@@ -153,9 +153,8 @@ module.exports = function () {
                             } else {
 
                                 require('../mongo/motangan').findQueryLimit({"pubDate.day": new Date().getDay()}, 1000, function (res) {
-                                    console.log("Xong arrMotaNgan" + arrMotaNgan.length)
-                                    console.log("Xong arrMotaNgan" + res)
                                     arrMotaNgan = res;
+                                    console.log("Xong arrMotaNgan" + arrMotaNgan.length)
                                     readHTMLItemVnExpress(0);
                                 })
 
@@ -169,43 +168,40 @@ module.exports = function () {
 
     var arrMotaNgan = new Array();
     chayCategory(0);
-    try {
-        function readHTMLItemVnExpress(index_con) {
-            console.log('readHTMLItemVnExpress ' + index_con)
-            var jsdom = require("jsdom/lib/old-api.js");
-            jsdom.env(
-                arrMotaNgan[index_con].linkContents,
-                ["http://code.jquery.com/jquery.js"],
-                function (err, window) {
+    var jsdom = require("jsdom/lib/old-api.js");
+    function readHTMLItemVnExpress(index_con) {
 
-                    var content = window.$("#left_calculator").html();
-                    var title = window.$(".title_news").html();
-                    if (title==undefined) title=window.$("title").html();
-                    console.log(title);
-                    if (content == undefined) {
-                        try {
-                            content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
-                            s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
-                            s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
-                            s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
-                            s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
-                            linkVideo = s720;
-                            if (linkVideo == '') linkVideo = s480;
-                            else if (linkVideo == '') linkVideo = s360;
-                            else if (linkVideo == '') linkVideo = s240;
-                            content = `<video src="${linkVideo}"
-       controls>
-</video>`
-                        } catch (error) {
-                            if (index_con < arrMotaNgan.length - 1) {
-                                readHTMLItemVnExpress(index_con + 1)
-                                return;
-                            }
-                        }
+        console.log('readHTMLItemVnExpress ' + index_con)
+        console.log('arrMotaNgan ' + arrMotaNgan.length)
+        jsdom.env(
+            arrMotaNgan[index_con].linkContents,
+            ["http://code.jquery.com/jquery.js"],
+            function (err, window) {
+                var content = window.$("#left_calculator").html();
+                var title = window.$(".title_news").html();
+                console.log(title);
+                if (content == undefined) {
+                    try {
+                        content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
+                        s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
+                        s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
+                        s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
+                        s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
+                        linkVideo = s720;
+                        if (linkVideo == '') linkVideo = s480;
+                        else if (linkVideo == '') linkVideo = s360;
+                        else if (linkVideo == '') linkVideo = s240;
+                        content = `<video src="${linkVideo}"controls></video>`
+                    }catch (e){
+                        if (index_con < arrMotaNgan.length - 1)
+                            readHTMLItemVnExpress(index_con + 1)
+                        else chayCategory(0);
                     }
-                    var contents = {
-                        linkContents: arrMotaNgan[index_con].linkContents,
-                        contentHTML: `
+
+                }
+                var contents = {
+                    linkContents: arrMotaNgan[index_con].linkContents,
+                    contentHTML: `
                     <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -244,17 +240,14 @@ module.exports = function () {
 </head>
 <body>${title}${content}</body>
 </html>`,
-                    }
-                    noidung.insertOne(contents, {linkContents: contents.linkContents}, function () {
-                        console.log('insertContents')
-                        if (index_con < arrMotaNgan.length - 1)
-                            readHTMLItemVnExpress(index_con + 1)
-                        else chayCategory(0);
-                    });
                 }
-            );
-        }
-    } catch (e) {
+                noidung.insertOne(contents, {"linkContents": arrMotaNgan[index_con].linkContents}, function () {
+                    if (index_con < arrMotaNgan.length - 1)
+                        readHTMLItemVnExpress(index_con + 1)
+                    else chayCategory(0);
+                });
+            }
+        );
     }
 
 }
