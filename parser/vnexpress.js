@@ -170,7 +170,6 @@ module.exports = function () {
     chayCategory(0);
     var jsdom = require("jsdom/lib/old-api.js");
     function readHTMLItemVnExpress(index_con) {
-
         console.log('readHTMLItemVnExpress ' + index_con)
         console.log('arrMotaNgan ' + arrMotaNgan.length)
         jsdom.env(
@@ -179,6 +178,7 @@ module.exports = function () {
             function (err, window) {
                 var content = window.$("#left_calculator").html();
                 var title = window.$(".title_news").html();
+                if (title==undefined) title=`<h1>${window.$("title").html()}</h1>`
                 console.log(title);
                 if (content == undefined) {
                     try {
