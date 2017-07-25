@@ -125,9 +125,6 @@ module.exports = function () {
                                         img: itemMoTaNgan.description[0].split(`src=\"`)[1].split(`"`)[0],
 
                                     }
-                                    motangan.insertOne(objMoTaNgan, {"linkContents": objMoTaNgan.linkContents}, function () {
-
-                                    });
                                     ArrayMotaNgan.push(objMoTaNgan);
                                 } catch (e) {
                                     console.log(`lỗi ${e}`);
@@ -135,7 +132,7 @@ module.exports = function () {
 
                             }// for
                             console.log(`ArrayMotaNgan ${ArrayMotaNgan.length}`);
-
+                            var MoTaNganHave=[]
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
@@ -207,12 +204,18 @@ module.exports = function () {
 </html>`,
                                             }
                                             ArrayNoiDung.push(contents);
+                                            MoTaNganHave.push(objMoTaNgan)
                                             if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
                                             else if (indexCategory < sizeCategory - 1) {
                                                 for (indexNoiDung in ArrayNoiDung) {
                                                     noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
                                                     });// noidung.insertOne
                                                 }// for (indexNoiDung in ArrayNoiDung){
+                                                for (indexMoTaNganHave in MoTaNganHave) {
+                                                    motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
+                                                    });// noidung.insertOne
+                                                }
+                                                MoTaNganHave=[]
                                                 ArrayNoiDung = [];
                                                 ArrayMotaNgan = [];
                                                 chayCategory(indexCategory + 1)

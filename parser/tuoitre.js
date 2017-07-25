@@ -103,25 +103,27 @@ module.exports = function () {
 
                                 }
                                 // console.log(JSON.stringify(itemMoTaNgan))
-                                motangan.insertOne(itemMoTaNgan, {"linkContents": itemMoTaNgan.linkContents}, function () {
-
-                                });
                                 ArrayMotaNgan.push(itemMoTaNgan)
 
 
                             }//-------------for
+                            var MoTaNganHave = []
+
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
                                         var content = window.$(".left-side").html();
 
-                                        var linkVideo='';
+                                        var linkVideo = '';
                                         try {
                                             console.log(objMoTaNgan.linkContents)
                                             console.log(`---------------------${window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]}`)
                                             linkVideo = window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]
-                                        }catch (e){
+                                        } catch (e) {
                                         }
+                                    //
+                                    if (linkVideo!='') linkVideo=`<video src="${linkVideo}" controls></video>`
+                                    else linkVideo='';
                                         var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
                                         console.log(`${indexMoTaNgan + title}`)
                                         // console.log(`${content}`)
@@ -157,19 +159,26 @@ module.exports = function () {
 </head>
 <body>
 ${title}
-<video src="${linkVideo}" controls></video>
+${linkVideo}
+
 ${content}
 
 </body>
 </html>`
                                         }
                                         ArrayNoiDung.push(contents);
+                                        MoTaNganHave.push(objMoTaNgan)
                                         if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
                                         else if (indexCategory < sizeCategory - 1) {
                                             for (indexNoiDung in ArrayNoiDung) {
                                                 noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
                                                 });// noidung.insertOne
                                             }// for (indexNoiDung in ArrayNoiDung){
+                                            for (indexMoTaNganHave in MoTaNganHave) {
+                                                motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
+                                                });// noidung.insertOne
+                                            }
+                                            MoTaNganHave = []
                                             ArrayNoiDung = [];
                                             ArrayMotaNgan = [];
                                             chayCategory(indexCategory + 1)
