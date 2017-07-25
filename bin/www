@@ -99,21 +99,18 @@ var itemContents = {
 }
 // require('../parser/vnexpress')();
 // require('../parser/tuoitre')();
-// require('../mongo/motangan').findQueryLimit({},100,function (res) {
-//     console.log(res);
-// })
-// require('../mongo/motangan').countQuery({id:0},function (res) {
-//     console.log(res);
-// })
 var schedule = require('node-schedule');
-var j = schedule.scheduleJob('59 * * * *', function(){
+var j = schedule.scheduleJob('10 * * * *', function () {
     try {
         require('../parser/vnexpress')();
-    }catch (e){}
+    } catch (e) {
+    }
     try {
         require('../parser/tuoitre')();
-    }catch (e){}
+    } catch (e) {
+    }
 });
+console.log(`----------------------> Ch?y r?i b?n`);
 
 
 

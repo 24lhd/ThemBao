@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -14,65 +16,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ReadXML" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+            <state relative-caret-position="233">
+              <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tuoitre.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
-              <folding>
-                <element signature="e#15#2200#0" expanded="false" />
-                <marker date="1500999752438" expanded="true" signature="6111:6593" ph="..." />
-                <marker date="1500999752438" expanded="true" signature="6118:6535" ph="..." />
-                <marker date="1500999752438" expanded="true" signature="6182:6527" ph="..." />
-                <marker date="1500999752438" expanded="true" signature="6198:6260" ph="{...}" />
-                <marker date="1500999752438" expanded="true" signature="6273:6365" ph="{...}" />
-                <marker date="1500999752438" expanded="true" signature="6379:6441" ph="{...}" />
-                <marker date="1500999752438" expanded="true" signature="6493:6515" ph="{...}" />
-                <marker date="1500999752438" expanded="true" signature="6542:6544" ph="..." />
-                <marker date="1500999752438" expanded="true" signature="6542:6585" ph="..." />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
+      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
-              <folding>
-                <element signature="e#15#2638#0" expanded="false" />
-                <element signature="e#28#165#0" expanded="false" />
-                <element signature="e#175#318#0" expanded="false" />
-                <element signature="e#6780#7926#0" expanded="false" />
-                <element signature="e#9694#9956#0" expanded="false" />
-                <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,7 +114,6 @@
         <option value="$PROJECT_DIR$/mongo/insertDes.js" />
         <option value="$PROJECT_DIR$/mongo/NoiDung.js" />
         <option value="$PROJECT_DIR$/mongo/Motangan.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/noidung.js" />
         <option value="$PROJECT_DIR$/routes/motangan.js" />
         <option value="$PROJECT_DIR$/parser/run.js" />
@@ -153,9 +126,10 @@
         <option value="$PROJECT_DIR$/object/categorys.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/parser/tuoitre.js" />
-        <option value="$PROJECT_DIR$/bin/www" />
         <option value="$PROJECT_DIR$/config/MongoConnect.js" />
         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/bin/www" />
       </list>
     </option>
   </component>
@@ -201,6 +175,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="bin" type="cbb8eebc:String" user="bin" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,23 +243,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="bin" type="cbb8eebc:String" user="bin" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +393,8 @@
       <workItem from="1500928157285" duration="1097000" />
       <workItem from="1500942756492" duration="8496000" />
       <workItem from="1500951620113" duration="8735000" />
-      <workItem from="1500998145004" duration="2716000" />
+      <workItem from="1500998145004" duration="3368000" />
+      <workItem from="1501002387296" duration="139000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -589,11 +564,27 @@
       <option name="project" value="LOCAL" />
       <updated>1501001099447</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="thêm database mlab">
+      <created>1501001347645</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1501001347645</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82029000" />
+    <option name="totallyTimeSpent" value="82820000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -603,7 +594,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.50619197" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -680,27 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3026">
           <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
-          <folding>
-            <element signature="e#15#2638#0" expanded="false" />
-            <element signature="e#28#165#0" expanded="false" />
-            <element signature="e#175#318#0" expanded="false" />
-            <element signature="e#6780#7926#0" expanded="false" />
-            <element signature="e#9694#9956#0" expanded="false" />
-            <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/noidung.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -906,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-841">
           <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -944,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,15 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="158" column="0" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="158" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1938">
-          <caret line="114" column="16" lean-forward="true" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,44 +919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
-          <folding>
-            <element signature="e#2067#2073#0" expanded="true" />
-            <element signature="e#2225#2230#0" expanded="true" />
-            <element signature="e#2970#2975#0" expanded="true" />
-            <element signature="e#3706#3712#0" expanded="true" />
-            <element signature="e#3733#3739#0" expanded="true" />
-            <element signature="e#4106#4112#0" expanded="true" />
-            <element signature="e#4159#4165#0" expanded="true" />
-            <element signature="e#4197#4202#0" expanded="true" />
-            <element signature="e#8223#8228#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
-          <folding>
-            <element signature="e#15#2200#0" expanded="false" />
-            <marker date="1500999752438" expanded="true" signature="6111:6593" ph="..." />
-            <marker date="1500999752438" expanded="true" signature="6118:6535" ph="..." />
-            <marker date="1500999752438" expanded="true" signature="6182:6527" ph="..." />
-            <marker date="1500999752438" expanded="true" signature="6198:6260" ph="{...}" />
-            <marker date="1500999752438" expanded="true" signature="6273:6365" ph="{...}" />
-            <marker date="1500999752438" expanded="true" signature="6379:6441" ph="{...}" />
-            <marker date="1500999752438" expanded="true" signature="6493:6515" ph="{...}" />
-            <marker date="1500999752438" expanded="true" signature="6542:6544" ph="..." />
-            <marker date="1500999752438" expanded="true" signature="6542:6585" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,27 +926,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
-          <folding>
-            <element signature="e#15#2638#0" expanded="false" />
-            <element signature="e#28#165#0" expanded="false" />
-            <element signature="e#175#318#0" expanded="false" />
-            <element signature="e#6780#7926#0" expanded="false" />
-            <element signature="e#9694#9956#0" expanded="false" />
-            <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
