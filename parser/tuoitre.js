@@ -114,9 +114,19 @@ module.exports = function () {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
                                         var content = window.$(".left-side").html();
+
+                                        var linkVideo='';
+                                        try {
+                                            console.log(objMoTaNgan.linkContents)
+                                            console.log(`---------------------${window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]}`)
+                                            linkVideo = window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]
+                                        }catch (e){
+                                        }
                                         var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
                                         console.log(`${indexMoTaNgan + title}`)
                                         // console.log(`${content}`)
+
+                                        // console.log(`-------------------------------------${linkVideo}`)
                                         var contents = {
 
                                             linkContents: ArrayMotaNgan[indexMoTaNgan].linkContents,
@@ -140,11 +150,14 @@ module.exports = function () {
             width: 100%;
             margin: auto;
         }
-
+.tool-bar,.title-2,.block-key,.highlight,.wrapPopup{
+    display: none;
+}
     </style>
 </head>
 <body>
 ${title}
+<video src="${linkVideo}" controls></video>
 ${content}
 
 </body>
@@ -165,6 +178,7 @@ ${content}
                                     }
                                 )
                             }
+
                             getHTML(0)
                             console.log("ArrayMotaNgan " + ArrayMotaNgan.length)
                         }//-------function (err, data) {

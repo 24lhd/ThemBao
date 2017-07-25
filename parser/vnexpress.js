@@ -153,7 +153,7 @@ module.exports = function () {
                                                 if (linkVideo == '') linkVideo = s480;
                                                 else if (linkVideo == '') linkVideo = s360;
                                                 else if (linkVideo == '') linkVideo = s240;
-                                                content = `<video src="${linkVideo}"controls></video>`
+                                                content = `<video src="${linkVideo}" controls></video>`
                                             }
                                             var contents = {
                                                 linkContents: objMoTaNgan.linkContents,
