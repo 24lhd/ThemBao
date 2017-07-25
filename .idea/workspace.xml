@@ -23,8 +23,8 @@
       <file leaf-file-name="www" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+            <state relative-caret-position="233">
+              <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -393,7 +393,7 @@
       <workItem from="1500942756492" duration="8496000" />
       <workItem from="1500951620113" duration="8735000" />
       <workItem from="1500998145004" duration="3368000" />
-      <workItem from="1501002387296" duration="338000" />
+      <workItem from="1501002387296" duration="393000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -577,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501002571347</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="thêm database mlab">
+      <created>1501002739672</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1501002739672</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83019000" />
+    <option name="totallyTimeSpent" value="83074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -960,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="113" column="35" lean-forward="false" selection-start-line="113" selection-start-column="35" selection-end-line="113" selection-end-column="35" />
+        <state relative-caret-position="233">
+          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
           <folding />
         </state>
       </provider>
