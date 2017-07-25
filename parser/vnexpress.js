@@ -138,10 +138,7 @@ module.exports = function () {
 
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
-                                jsdom.env(
-                                    objMoTaNgan.linkContents,
-                                    ["http://code.jquery.com/jquery.js"],
-                                    function (err, window) {
+                                jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
                                         try {
                                             var content = window.$("#left_calculator").html();
                                             var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
