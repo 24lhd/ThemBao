@@ -1,20 +1,16 @@
 var Mongo = require('../config/MongoConnect');
-var CollName = 'noidung'
+var CollName = 'NoiDung'
 module.exports = {
     insertOne: function (content, query, callback) {
         Mongo(function (db) {
-            db.collection(CollName).find(query).toArray(function (err, result) {
+            db.collection(CollName).deleteMany(query,function (err, result) {
                 if (err) throw err;
-                if (result[0] == null) {
-                    db.collection(CollName).insertOne(content, function (err, res) {
-                        if (err) throw err;
-                        callback();
-                        db.close();
-                    });
-                }else {
+                db.collection(CollName).insertOne(content, function (err, res) {
+                    if (err) throw err;
+                    console.log("Query chèn Nội dung "+JSON.stringify(query))
                     callback();
                     db.close();
-                }
+                });
             })
         })
     },
