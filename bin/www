@@ -97,13 +97,19 @@ var itemContents = {
     img: "",
     pubDate: "",
 }
-require('../parser/vnexpress')();
+// require('../parser/vnexpress')();
 // require('../mongo/motangan').findQueryLimit({},100,function (res) {
 //     console.log(res);
 // })
 // require('../mongo/motangan').countQuery({id:0},function (res) {
 //     console.log(res);
 // })
+var schedule = require('node-schedule');
+var j = schedule.scheduleJob('59 * * * *', function(){
+    try {
+        require('../parser/vnexpress')();
+    }catch (e){}
+});
 
 
 

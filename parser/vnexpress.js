@@ -123,15 +123,7 @@ module.exports = function () {
                                         title: itemMoTaNgan.title[0],
                                         description: itemMoTaNgan.description[0].split(`</br>`)[1],
                                         img: itemMoTaNgan.description[0].split(`src=\"`)[1].split(`"`)[0],
-                                        pubDate: {
-                                            second: new Date().getSeconds(),
-                                            minute: new Date().getMinutes(),
-                                            hour: new Date().getHours(),
-                                            day: new Date().getDay(),
-                                            month: new Date().getMonth(),
-                                            year: new Date().getYear(),
-                                            fullYear: new Date().getFullYear(),
-                                        },
+
                                     }
                                     motangan.insertOne(objMoTaNgan, {"linkContents": objMoTaNgan.linkContents}, function () {
 
@@ -204,6 +196,9 @@ module.exports = function () {
             display: none;
         }
         #box_tinlienquan{
+            display: none;
+        }
+        .relative_new{
             display: none;
         }
           .block_goithutoasoan{

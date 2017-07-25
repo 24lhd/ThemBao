@@ -5,6 +5,15 @@ module.exports = {
         Mongo(function (db) {
                 db.collection(CollName).deleteMany(query,function (err, result) {
                     if (err) throw err;
+                    content. pubDate= {
+                        second: new Date().getSeconds(),
+                            minute: new Date().getMinutes(),
+                            hour: new Date().getHours(),
+                            day: new Date().getDay(),
+                            month: new Date().getMonth(),
+                            year: new Date().getYear(),
+                            fullYear: new Date().getFullYear(),
+                    },
                     db.collection(CollName).insertOne(content, function (err, res) {
                         if (err) throw err;
                         callback();
