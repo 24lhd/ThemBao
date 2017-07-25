@@ -111,6 +111,7 @@ var j = schedule.scheduleJob('10 * * * *', function () {
     }
 });
 console.log(`----------------------> Ch?y r?i b?n`);
+console.log(new Date().getMinutes());
 
 
 
