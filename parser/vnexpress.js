@@ -218,7 +218,7 @@ module.exports = function () {
                                             if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
                                             else if (indexCategory < sizeCategory - 1) {
                                                 for (indexNoiDung in ArrayNoiDung) {
-                                                    noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": contents.linkContents}, function () {
+                                                    noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
                                                     });// noidung.insertOne
                                                 }// for (indexNoiDung in ArrayNoiDung){
                                                 ArrayNoiDung = [];
