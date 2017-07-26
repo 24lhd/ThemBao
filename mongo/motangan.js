@@ -1,16 +1,6 @@
 var Mongo = require('../config/MongoConnect');
 var CollName = 'MoTaNgan'
 var date = new Date();
-var strDate = new String(date);
-var pubDate = {
-    giay: strDate.split("T")[0].split(" ")[4].split(":")[2],
-    phut: strDate.split("T")[0].split(" ")[4].split(":")[1],
-    gio: strDate.split("T")[0].split(" ")[4].split(":")[0],
-    thu: strDate.split("T")[0].split(" ")[0],
-    ngay: strDate.split("T")[0].split(" ")[2],
-    thang: strDate.split("T")[0].split(" ")[1],
-    nam: strDate.split("T")[0].split(" ")[3],
-}
 module.exports = {
     insertOne: function (content, query, callback) {
         var strDate = new String(date);

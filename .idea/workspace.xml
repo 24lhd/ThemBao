@@ -4,6 +4,7 @@
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/motangan.js" afterPath="$PROJECT_DIR$/mongo/motangan.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,9 +24,34 @@
       <file leaf-file-name="www" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="777">
+            <state relative-caret-position="641">
               <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-272">
+              <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+              <folding>
+                <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
+                <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
+                <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
+                <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
+                <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +59,8 @@
       <file leaf-file-name="motangan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-821">
-              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -43,7 +69,7 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
+            <state relative-caret-position="199">
               <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
               <folding />
             </state>
@@ -137,8 +163,8 @@
         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/mongo/motangan.js" />
-        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
         <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
       </list>
     </option>
   </component>
@@ -405,7 +431,7 @@
       <workItem from="1500998145004" duration="3368000" />
       <workItem from="1501002387296" duration="1142000" />
       <workItem from="1501012306732" duration="72000" />
-      <workItem from="1501093384134" duration="925000" />
+      <workItem from="1501093384134" duration="1247000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -617,11 +643,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501094252721</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="thêm database mlab">
+      <created>1501094316564</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1501094316564</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84820000" />
+    <option name="totallyTimeSpent" value="85142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -977,23 +1003,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
+        <state relative-caret-position="199">
           <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+          <folding>
+            <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
+            <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
+            <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
+            <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
+            <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-821">
-          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
+        <state relative-caret-position="641">
           <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
           <folding />
         </state>
