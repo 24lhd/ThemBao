@@ -1,20 +1,29 @@
 var Mongo = require('../config/MongoConnect');
 var CollName = 'MoTaNgan'
 var date = new Date();
+// var strDate = new String(date);
+// var pubDate = {
+//     giay: strDate.split("T")[0].split(" ")[4].split(":")[2],
+//     phut: strDate.split("T")[0].split(" ")[4].split(":")[1],
+//     gio: strDate.split("T")[0].split(" ")[4].split(":")[0],
+//     thu: strDate.split("T")[0].split(" ")[0],
+//     ngay: strDate.split("T")[0].split(" ")[2],
+//     thang: strDate.split("T")[0].split(" ")[1],
+//     nam: strDate.split("T")[0].split(" ")[3],
+// }
 module.exports = {
     insertOne: function (content, query, callback) {
-        var strDate = new String(date);
         Mongo(function (db) {
             db.collection(CollName).deleteMany(query, function (err, result) {
                 if (err) throw err;
                 content.pubDate = {
-                    giay: strDate.split("T")[0].split(" ")[4].split(":")[2],
-                    phut: strDate.split("T")[0].split(" ")[4].split(":")[1],
-                    gio: strDate.split("T")[0].split(" ")[4].split(":")[0],
-                    thu: strDate.split("T")[0].split(" ")[0],
-                    ngay: strDate.split("T")[0].split(" ")[2],
-                    thang: strDate.split("T")[0].split(" ")[1],
-                    nam: strDate.split("T")[0].split(" ")[3],
+                    second: new Date().getSeconds(),
+                    minute: new Date().getMinutes(),
+                    hour: new Date().getHours(),
+                    day: new Date().getDay(),
+                    month: new Date().getMonth(),
+                    year: new Date().getYear(),
+                    fullYear: new Date().getFullYear(),
                 },
                     db.collection(CollName).insertOne(content, function (err, res) {
                         if (err) throw err;
@@ -70,5 +79,4 @@ module.exports = {
             })
         })
     },
-
 }
