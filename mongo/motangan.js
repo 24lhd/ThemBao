@@ -24,13 +24,13 @@ module.exports = {
                     month: new Date().getMonth(),
                     year: new Date().getYear(),
                     fullYear: new Date().getFullYear(),
-                },
-                    db.collection(CollName).insertOne(content, function (err, res) {
-                        if (err) throw err;
-                        callback();
-                        console.log("Query chèn mô tả " + JSON.stringify(query))
-                        db.close();
-                    });
+                }
+                db.collection(CollName).insertOne(content, function (err, res) {
+                    if (err) throw err;
+                    callback();
+                    console.log("Query chèn mô tả " + JSON.stringify(query))
+                    db.close();
+                });
             })
         })
     },

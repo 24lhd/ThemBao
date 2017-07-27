@@ -77,7 +77,7 @@ var sizeCategory = listCate.item.length;
 var jsdom = require("jsdom/lib/old-api.js");
 
 
-module.exports = function () {
+module.exports = function (index) {
     var ArrayMotaNgan = [];
     var ArrayNoiDung = [];
 
@@ -181,7 +181,7 @@ ${content}
                                             MoTaNganHave = []
                                             ArrayNoiDung = [];
                                             ArrayMotaNgan = [];
-                                            chayCategory(indexCategory + 1)
+                                            // chayCategory(indexCategory + 1)
                                         }// else if
 
                                     }
@@ -199,5 +199,5 @@ ${content}
         )
     }
 
-    chayCategory(0)
+    chayCategory(index)
 }

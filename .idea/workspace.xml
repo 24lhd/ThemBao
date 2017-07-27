@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mongo/insertContents.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mongo/insertDes.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/motangan.js" afterPath="$PROJECT_DIR$/mongo/motangan.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/tuoitre.js" afterPath="$PROJECT_DIR$/parser/tuoitre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/vnexpress.js" afterPath="$PROJECT_DIR$/parser/vnexpress.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+      <file leaf-file-name="www" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+            <state relative-caret-position="454">
+              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -33,23 +38,42 @@
       <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+            <state relative-caret-position="1768">
+              <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
               <folding>
-                <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
-                <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
-                <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
+                <marker date="1501159203695" expanded="true" signature="6996:7842" ph="..." />
+                <marker date="1501159203695" expanded="true" signature="7060:7834" ph="..." />
+                <marker date="1501159203695" expanded="true" signature="7076:7138" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7151:7243" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7257:7319" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7348:7386" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7408:7446" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7469:7507" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7534:7572" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7592:7630" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7655:7693" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7715:7753" ph="{...}" />
+                <marker date="1501159203695" expanded="true" signature="7784:7822" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tuoitre.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+              <folding>
+                <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
+                <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
+                <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
+                <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
+                <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
+                <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
+                <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
+                <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
               </folding>
             </state>
           </provider>
@@ -58,8 +82,8 @@
       <file leaf-file-name="motangan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            <state relative-caret-position="595">
+              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -75,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
-              <caret line="1" column="72" lean-forward="true" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+              <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -103,7 +127,6 @@
       <find />
       <find>readHTMLItemVnExpress</find>
       <find>arrMotaNgan</find>
-      <find>chayCategory</find>
       <find>linkContent</find>
       <find>isSucsec</find>
       <find>readContent</find>
@@ -114,6 +137,9 @@
       <find>video</find>
       <find>mp4</find>
       <find>LinkCategory</find>
+      <find>indexCategory</find>
+      <find>index</find>
+      <find>chayCategory</find>
     </findStrings>
     <replaceStrings>
       <replace>http://vnexpress.net/</replace>
@@ -158,11 +184,11 @@
         <option value="$PROJECT_DIR$/news/TuoiTre.js" />
         <option value="$PROJECT_DIR$/object/categorys.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/parser/tuoitre.js" />
-        <option value="$PROJECT_DIR$/parser/vnexpress.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/mongo/motangan.js" />
         <option value="$PROJECT_DIR$/config/MongoConnect.js" />
+        <option value="$PROJECT_DIR$/mongo/motangan.js" />
+        <option value="$PROJECT_DIR$/parser/vnexpress.js" />
+        <option value="$PROJECT_DIR$/parser/tuoitre.js" />
         <option value="$PROJECT_DIR$/bin/www" />
       </list>
     </option>
@@ -195,7 +221,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -209,23 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="bin" type="cbb8eebc:String" user="bin" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,6 +286,38 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="bin" type="cbb8eebc:String" user="bin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="mongo" type="cbb8eebc:String" user="mongo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="parser" type="cbb8eebc:String" user="parser" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,7 +474,9 @@
       <workItem from="1501093384134" duration="3285000" />
       <workItem from="1501100242832" duration="89000" />
       <workItem from="1501102904828" duration="874000" />
-      <workItem from="1501111900096" duration="1143000" />
+      <workItem from="1501111900096" duration="2086000" />
+      <workItem from="1501159012177" duration="845000" />
+      <workItem from="1501177501862" duration="42000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -694,11 +737,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501112518447</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="thêm database mlab">
+      <created>1501113048588</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1501113048588</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89286000" />
+    <option name="totallyTimeSpent" value="91116000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -712,12 +762,12 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.50619197" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43225807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -966,20 +1016,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/insertContents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/insertDes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/insertContents.js" />
+    <entry file="file://$PROJECT_DIR$/mongo/insertDes.js" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1038,13 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="125" column="54" lean-forward="false" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1055,47 +1086,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+        <state relative-caret-position="595">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2261">
-          <caret line="133" column="19" lean-forward="false" selection-start-line="133" selection-start-column="19" selection-end-line="133" selection-end-column="19" />
+        <state relative-caret-position="1768">
+          <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
           <folding>
-            <marker date="1501001282481" expanded="true" signature="6984:7877" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="6991:7837" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7055:7829" ph="..." />
-            <marker date="1501001282481" expanded="true" signature="7071:7133" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7146:7238" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7252:7314" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7343:7381" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7403:7441" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7464:7502" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7529:7567" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7587:7625" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7650:7688" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7710:7748" ph="{...}" />
-            <marker date="1501001282481" expanded="true" signature="7779:7817" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
+            <marker date="1501159203695" expanded="true" signature="6996:7842" ph="..." />
+            <marker date="1501159203695" expanded="true" signature="7060:7834" ph="..." />
+            <marker date="1501159203695" expanded="true" signature="7076:7138" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7151:7243" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7257:7319" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7348:7386" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7408:7446" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7469:7507" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7534:7572" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7592:7630" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7655:7693" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7715:7753" ph="{...}" />
+            <marker date="1501159203695" expanded="true" signature="7784:7822" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1428">
+          <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+          <folding>
+            <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="72" lean-forward="true" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="107" column="50" lean-forward="true" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
+          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
           <folding />
         </state>
       </provider>

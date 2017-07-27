@@ -98,7 +98,7 @@ var parser = new xml2js.Parser()
 var sizeCategory = listCate.item.length;
 var jsdom = require("jsdom/lib/old-api.js");
 
-module.exports = function () {
+module.exports = function (index) {
     var ArrayMotaNgan = [];
     var ArrayNoiDung = [];
     function chayCategory(indexCategory) {
@@ -218,14 +218,14 @@ module.exports = function () {
                                                 MoTaNganHave=[]
                                                 ArrayNoiDung = [];
                                                 ArrayMotaNgan = [];
-                                                chayCategory(indexCategory + 1)
+                                                // chayCategory(indexCategory + 1)
                                             }// else if
                                         } catch (e) {
                                             if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
                                             else if (indexCategory < sizeCategory - 1) {
                                                 ArrayNoiDung = [];
                                                 ArrayMotaNgan = [];
-                                                chayCategory(indexCategory + 1)
+                                                // chayCategory(indexCategory + 1)
                                             }// else if
                                         }
                                     });
@@ -238,5 +238,5 @@ module.exports = function () {
         )
     }
 
-    chayCategory(0);
+    chayCategory(index);
 }
