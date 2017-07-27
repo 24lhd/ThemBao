@@ -126,7 +126,7 @@ module.exports = function (index) {
                                     else linkVideo='';
                                         var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
                                         console.log(`${indexMoTaNgan + title}`)
-                                        // console.log(`${content}`)
+                                       // console.log(`${content}`)
 
                                         // console.log(`-------------------------------------${linkVideo}`)
                                         var contents = {
@@ -159,10 +159,10 @@ module.exports = function (index) {
 </head>
 <body>
 ${title}
-${linkVideo}
+
 
 ${content}
-
+${linkVideo}
 </body>
 </html>`
                                         }

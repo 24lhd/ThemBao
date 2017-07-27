@@ -4,6 +4,8 @@
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/tuoitre.js" afterPath="$PROJECT_DIR$/parser/tuoitre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,12 +22,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+      <file leaf-file-name="www" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="49">
+              <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="246" column="7" lean-forward="false" selection-start-line="246" selection-start-column="7" selection-end-line="246" selection-end-column="7" />
+              <folding>
+                <element signature="e#2279#2285#0" expanded="true" />
+                <element signature="e#3465#3471#0" expanded="true" />
+                <element signature="e#4172#4178#0" expanded="true" />
+                <element signature="e#5817#5823#0" expanded="true" />
+                <element signature="e#6411#6417#0" expanded="true" />
+                <element signature="e#6667#6672#0" expanded="true" />
+                <element signature="e#11391#11396#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,7 +53,7 @@
       <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="1768">
               <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
               <folding>
                 <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
@@ -58,17 +78,17 @@
       <file leaf-file-name="tuoitre.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="22" />
+            <state relative-caret-position="123">
+              <caret line="128" column="41" lean-forward="false" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
               <folding>
-                <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
-                <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
-                <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
-                <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
-                <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
-                <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
-                <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
-                <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
+                <marker date="1501180510252" expanded="true" signature="6115:6597" ph="..." />
+                <marker date="1501180510252" expanded="true" signature="6122:6539" ph="..." />
+                <marker date="1501180510252" expanded="true" signature="6186:6531" ph="..." />
+                <marker date="1501180510252" expanded="true" signature="6202:6264" ph="{...}" />
+                <marker date="1501180510252" expanded="true" signature="6277:6369" ph="{...}" />
+                <marker date="1501180510252" expanded="true" signature="6383:6445" ph="{...}" />
+                <marker date="1501180510252" expanded="true" signature="6497:6519" ph="{...}" />
+                <marker date="1501180510252" expanded="true" signature="6546:6589" ph="..." />
               </folding>
             </state>
           </provider>
@@ -77,7 +97,7 @@
       <file leaf-file-name="motangan.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
+            <state relative-caret-position="491">
               <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
               <folding />
             </state>
@@ -94,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+            <state relative-caret-position="51">
+              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -135,6 +155,7 @@
       <find>indexCategory</find>
       <find>chayCategory</find>
       <find>index</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace>http://vnexpress.net/</replace>
@@ -178,13 +199,13 @@
         <option value="$PROJECT_DIR$/mongo/noidung.js" />
         <option value="$PROJECT_DIR$/news/TuoiTre.js" />
         <option value="$PROJECT_DIR$/object/categorys.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
         <option value="$PROJECT_DIR$/mongo/motangan.js" />
         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/parser/tuoitre.js" />
         <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/config/MongoConnect.js" />
       </list>
     </option>
   </component>
@@ -230,6 +251,38 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="bin" type="cbb8eebc:String" user="bin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="mongo" type="cbb8eebc:String" user="mongo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="parser" type="cbb8eebc:String" user="parser" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,33 +334,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="bin" type="cbb8eebc:String" user="bin" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="mongo" type="cbb8eebc:String" user="mongo" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="parser" type="cbb8eebc:String" user="parser" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -466,7 +492,8 @@
       <workItem from="1501102904828" duration="874000" />
       <workItem from="1501111900096" duration="2086000" />
       <workItem from="1501159012177" duration="845000" />
-      <workItem from="1501177501862" duration="468000" />
+      <workItem from="1501177501862" duration="556000" />
+      <workItem from="1501180170949" duration="359000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -741,11 +768,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501177561306</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="thêm database mlab">
+      <created>1501177975827</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1501177975827</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91542000" />
+    <option name="totallyTimeSpent" value="91989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -764,7 +798,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.50619197" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43225807" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.077419356" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1066,13 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
@@ -1081,42 +1108,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="22" />
-          <folding>
-            <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="1768">
           <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
           <folding>
             <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
@@ -1137,10 +1131,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="246" column="7" lean-forward="false" selection-start-line="246" selection-start-column="7" selection-end-line="246" selection-end-column="7" />
+          <folding>
+            <element signature="e#2279#2285#0" expanded="true" />
+            <element signature="e#3465#3471#0" expanded="true" />
+            <element signature="e#4172#4178#0" expanded="true" />
+            <element signature="e#5817#5823#0" expanded="true" />
+            <element signature="e#6411#6417#0" expanded="true" />
+            <element signature="e#6667#6672#0" expanded="true" />
+            <element signature="e#11391#11396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="128" column="41" lean-forward="false" selection-start-line="128" selection-start-column="41" selection-end-line="128" selection-end-column="41" />
+          <folding>
+            <marker date="1501180510252" expanded="true" signature="6115:6597" ph="..." />
+            <marker date="1501180510252" expanded="true" signature="6122:6539" ph="..." />
+            <marker date="1501180510252" expanded="true" signature="6186:6531" ph="..." />
+            <marker date="1501180510252" expanded="true" signature="6202:6264" ph="{...}" />
+            <marker date="1501180510252" expanded="true" signature="6277:6369" ph="{...}" />
+            <marker date="1501180510252" expanded="true" signature="6383:6445" ph="{...}" />
+            <marker date="1501180510252" expanded="true" signature="6497:6519" ph="{...}" />
+            <marker date="1501180510252" expanded="true" signature="6546:6589" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="49">
+          <caret line="104" column="33" lean-forward="false" selection-start-line="104" selection-start-column="33" selection-end-line="104" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding />
         </state>
       </provider>
