@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mongo/insertContents.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mongo/insertDes.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/motangan.js" afterPath="$PROJECT_DIR$/mongo/motangan.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/tuoitre.js" afterPath="$PROJECT_DIR$/parser/tuoitre.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/vnexpress.js" afterPath="$PROJECT_DIR$/parser/vnexpress.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="www" pinned="false" current-in-tab="false">
+      <file leaf-file-name="www" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -38,7 +33,7 @@
       <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
+            <state relative-caret-position="17">
               <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
               <folding>
                 <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
@@ -63,8 +58,8 @@
       <file leaf-file-name="tuoitre.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
+            <state relative-caret-position="389">
+              <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="22" />
               <folding>
                 <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
                 <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
@@ -99,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -138,8 +133,8 @@
       <find>mp4</find>
       <find>LinkCategory</find>
       <find>indexCategory</find>
-      <find>index</find>
       <find>chayCategory</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace>http://vnexpress.net/</replace>
@@ -297,11 +292,6 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
               <item name="bin" type="cbb8eebc:String" user="bin" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="config" type="cbb8eebc:String" user="config" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -476,7 +466,7 @@
       <workItem from="1501102904828" duration="874000" />
       <workItem from="1501111900096" duration="2086000" />
       <workItem from="1501159012177" duration="845000" />
-      <workItem from="1501177501862" duration="42000" />
+      <workItem from="1501177501862" duration="468000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -744,11 +734,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501113048588</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="thêm database mlab">
+      <created>1501177561306</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1501177561306</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91116000" />
+    <option name="totallyTimeSpent" value="91542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,9 +1089,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="201" column="22" lean-forward="false" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="22" />
+          <folding>
+            <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
+            <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
+            <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
+        <state relative-caret-position="17">
           <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
           <folding>
             <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
@@ -1115,35 +1137,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="55" lean-forward="false" selection-start-line="84" selection-start-column="55" selection-end-line="84" selection-end-column="55" />
-          <folding>
-            <marker date="1501159203789" expanded="true" signature="6116:6598" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6123:6540" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6187:6532" ph="..." />
-            <marker date="1501159203789" expanded="true" signature="6203:6265" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6278:6370" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6384:6446" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6498:6520" ph="{...}" />
-            <marker date="1501159203789" expanded="true" signature="6547:6590" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="72" lean-forward="false" selection-start-line="1" selection-start-column="72" selection-end-line="1" selection-end-column="72" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
