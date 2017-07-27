@@ -113,7 +113,7 @@ module.exports = function (index) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
                                         var content = window.$(".left-side").html();
-
+                                        if (content == undefined) window.$(".main").html();
                                         var linkVideo = '';
                                         try {
                                             console.log(objMoTaNgan.linkContents)
@@ -121,12 +121,12 @@ module.exports = function (index) {
                                             linkVideo = window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]
                                         } catch (e) {
                                         }
-                                    //
-                                    if (linkVideo!='') linkVideo=`<video src="${linkVideo}" controls></video>`
-                                    else linkVideo='';
+                                        //
+                                        if (linkVideo != '') linkVideo = `<video src="${linkVideo}" controls></video>`
+                                        else linkVideo = '';
                                         var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
                                         console.log(`${indexMoTaNgan + title}`)
-                                       // console.log(`${content}`)
+                                        // console.log(`${content}`)
 
                                         // console.log(`-------------------------------------${linkVideo}`)
                                         var contents = {
