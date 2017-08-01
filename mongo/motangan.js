@@ -34,7 +34,7 @@ module.exports = {
                     nam: strDate.split("T")[0].split(" ")[3],
                 }
                 db.c
-                console.log("-----------------> " + JSON.stringify(pubDate));
+                console.log("-----------------> " + JSON.stringify( content.pubDate));
                 ollection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
                     callback();
