@@ -33,9 +33,8 @@ module.exports = {
                     thang: strDate.split("T")[0].split(" ")[1],
                     nam: strDate.split("T")[0].split(" ")[3],
                 }
-                db.c
-                console.log("-----------------> " + JSON.stringify( content.pubDate));
-                ollection(CollName).insertOne(content, function (err, res) {
+                console.log("-----------------> " + JSON.stringify(content.pubDate));
+                db.collection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
                     callback();
                     console.log("Query chèn mô tả " + JSON.stringify(query))
