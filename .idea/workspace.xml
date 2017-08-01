@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parser/tuoitre.js" afterPath="$PROJECT_DIR$/parser/tuoitre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/MongoConnect.js" afterPath="$PROJECT_DIR$/config/MongoConnect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/motangan.js" afterPath="$PROJECT_DIR$/mongo/motangan.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +26,8 @@
       <file leaf-file-name="www" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/www">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="113" column="23" lean-forward="false" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+            <state relative-caret-position="366">
+              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,20 +36,26 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="23" />
+            <state relative-caret-position="457">
+              <caret line="600" column="7" lean-forward="false" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ins#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#ins#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-                <element signature="e#13229#13234#0" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4349#4354#0" expanded="true" />
+                <element signature="e#6032#6037#0" expanded="true" />
+                <element signature="e#7111#7116#0" expanded="true" />
+                <element signature="e#11915#11920#0" expanded="true" />
+                <element signature="e#14320#14326#0" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#section#0;n#article#0;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#22157#22162#0" expanded="true" />
+                <element signature="e#28756#28761#0" expanded="true" />
+                <element signature="e#36415#36421#0" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#45189#45194#0" expanded="true" />
+                <element signature="e#46819#46824#0" expanded="true" />
+                <element signature="e#47591#47596#0" expanded="true" />
+                <element signature="n#style#0;n#dl#1;n#li#11;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#dl#2;n#li#11;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#p#1;n#li#19;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,9 +64,10 @@
       <file leaf-file-name="vnexpress.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+            <state relative-caret-position="17">
+              <caret line="124" column="43" lean-forward="false" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="43" />
               <folding>
+                <element signature="e#15#2638#0" expanded="false" />
                 <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
                 <marker date="1501159203695" expanded="true" signature="6996:7842" ph="..." />
                 <marker date="1501159203695" expanded="true" signature="7060:7834" ph="..." />
@@ -78,51 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tuoitre.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-308">
-              <caret line="114" column="68" lean-forward="false" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
-              <folding>
-                <element signature="e#5933#6653#0" expanded="false" />
-                <marker date="1501182939576" expanded="true" signature="6127:6609" ph="..." />
-                <marker date="1501182939576" expanded="true" signature="6134:6551" ph="..." />
-                <marker date="1501182939576" expanded="true" signature="6198:6543" ph="..." />
-                <marker date="1501182939576" expanded="true" signature="6214:6276" ph="{...}" />
-                <marker date="1501182939576" expanded="true" signature="6289:6381" ph="{...}" />
-                <marker date="1501182939576" expanded="true" signature="6395:6457" ph="{...}" />
-                <marker date="1501182939576" expanded="true" signature="6509:6531" ph="{...}" />
-                <marker date="1501182939576" expanded="true" signature="6558:6601" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="motangan.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MongoConnect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="motangan.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="36" column="77" lean-forward="false" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -204,12 +183,12 @@
         <option value="$PROJECT_DIR$/news/TuoiTre.js" />
         <option value="$PROJECT_DIR$/object/categorys.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/mongo/motangan.js" />
         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
-        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/parser/tuoitre.js" />
         <option value="$PROJECT_DIR$/config/MongoConnect.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/parser/tuoitre.js" />
+        <option value="$PROJECT_DIR$/bin/www" />
+        <option value="$PROJECT_DIR$/mongo/motangan.js" />
       </list>
     </option>
   </component>
@@ -232,8 +211,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="65" />
+    <option name="x" value="-100" />
+    <option name="y" value="-8" />
     <option name="width" value="1378" />
     <option name="height" value="754" />
   </component>
@@ -255,38 +234,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="bin" type="cbb8eebc:String" user="bin" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="mongo" type="cbb8eebc:String" user="mongo" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="parser" type="cbb8eebc:String" user="parser" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
-              <item name="public" type="cbb8eebc:String" user="public" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -338,6 +285,65 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="bin" type="cbb8eebc:String" user="bin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="config" type="cbb8eebc:String" user="config" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="mongo" type="cbb8eebc:String" user="mongo" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="parser" type="cbb8eebc:String" user="parser" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+              <item name="images" type="cbb8eebc:String" user="images" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="public" type="cbb8eebc:String" user="public" />
+              <item name="stylesheets" type="cbb8eebc:String" user="stylesheets" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="routes" type="cbb8eebc:String" user="routes" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ReadXML" type="cbb8eebc:String" user="ReadXML" />
+              <item name="views" type="cbb8eebc:String" user="views" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,7 +503,15 @@
       <workItem from="1501111900096" duration="2086000" />
       <workItem from="1501159012177" duration="845000" />
       <workItem from="1501177501862" duration="556000" />
-      <workItem from="1501180170949" duration="2018000" />
+      <workItem from="1501180170949" duration="2724000" />
+      <workItem from="1501218485393" duration="1335000" />
+      <workItem from="1501291278906" duration="768000" />
+      <workItem from="1501298206272" duration="1302000" />
+      <workItem from="1501346679620" duration="385000" />
+      <workItem from="1501399109411" duration="611000" />
+      <workItem from="1501460033612" duration="131000" />
+      <workItem from="1501484584708" duration="55000" />
+      <workItem from="1501623940806" duration="1439000" />
     </task>
     <task id="LOCAL-00001" summary="thay đổi tý">
       <created>1500565162234</created>
@@ -793,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501182356494</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="thêm database mlab">
+      <created>1501183031775</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1501183031775</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93648000" />
+    <option name="totallyTimeSpent" value="100380000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -811,16 +832,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21561338" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21486989" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.50619197" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0048387097" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967898" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3983871" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -867,51 +888,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/object/categorys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="1" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="95" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3026">
-          <caret line="178" column="9" lean-forward="true" selection-start-line="178" selection-start-column="9" selection-end-line="178" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html" />
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/object/categorys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="45" lean-forward="false" selection-start-line="88" selection-start-column="45" selection-end-line="88" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1023,13 +999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/noidung.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -1037,31 +1006,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/motangan.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/news.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1075,13 +1023,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/VnExpressParser.js" />
-    <entry file="file://$PROJECT_DIR$/mongo/noidung.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="45" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/parser/run.js" />
     <entry file="file://$PROJECT_DIR$/object/news.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1104,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/categorys.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="39" lean-forward="false" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/object/categorys.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1118,19 +1052,193 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="173" column="36" lean-forward="false" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/parser/vnexpress.js</OriginalElement>
+          <nodes>
+            <node x="17.0" y="279.0">$PROJECT_DIR$/node_modules/mongodb/index.js</node>
+            <node x="135.0" y="0.0">$PROJECT_DIR$/node_modules/cheerio/index.js</node>
+            <node x="385.0" y="195.0">$PROJECT_DIR$/node_modules/request/index.js</node>
+            <node x="315.0" y="39.0">$PROJECT_DIR$/mongo/motangan.js</node>
+            <node x="0.0" y="130.0">$PROJECT_DIR$/mongo/noidung.js</node>
+            <node x="141.0" y="374.0">$PROJECT_DIR$/node_modules/jsdom/lib/old-api.js</node>
+            <node x="177.0" y="76.0">$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;</node>
+            <node x="306.0" y="335.0">$PROJECT_DIR$/node_modules/xml2js/lib/xml2js.js</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/node_modules/xml2js/lib/xml2js.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/node_modules/mongodb/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/node_modules/cheerio/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/node_modules/request/index.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/node_modules/jsdom/lib/old-api.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/mongo/noidung.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;" target="$PROJECT_DIR$/mongo/motangan.js">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="248.0" y="201.0" />
+          <SelectedNodes>
+            <node>$PROJECT_DIR$/parser/vnexpress.js#cheerio#2708;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#jsdom#2932;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#mongo#2643;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#motangan#2783;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#noidung#2741;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#request#2675;D:/AppPro/Nodejs/ReadXML/parser/vnexpress.js#xml2js#2827;</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/D:/AppPro/Nodejs/ReadXML/public/index.html">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/public/index.html</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/public/index.html</node>
+            <node x="" y="">/css.php?k_c=e42dd28ed52400bf97e6fb45cb608236&amp;amp;o=i</node>
+            <node x="" y="">http://cm.tuoitre.vn/resources/images/loading.gif</node>
+            <node x="" y="">http://static.new.tuoitre.vn/tto/i/s626/2017/07/28/74c81c8b.jpg</node>
+            <node x="" y="">http://static.new.tuoitre.vn/tto/i/s626/2017/07/28/eb831b78.jpg</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="255.0" y="144.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/morgan/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/noidung.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/body-parser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/cookie-parser/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/motangan.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="30" lean-forward="true" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/serve-favicon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/categorys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/noidung.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parser/vnexpress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="104" column="55" lean-forward="false" selection-start-line="104" selection-start-column="55" selection-end-line="104" selection-end-column="55" />
+        <state relative-caret-position="17">
+          <caret line="124" column="43" lean-forward="false" selection-start-line="124" selection-start-column="40" selection-end-line="124" selection-end-column="43" />
           <folding>
+            <element signature="e#15#2638#0" expanded="false" />
             <marker date="1501159203695" expanded="true" signature="6989:7882" ph="..." />
             <marker date="1501159203695" expanded="true" signature="6996:7842" ph="..." />
             <marker date="1501159203695" expanded="true" signature="7060:7834" ph="..." />
@@ -1149,65 +1257,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="35" column="6" lean-forward="false" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
-          <folding />
+        <state relative-caret-position="457">
+          <caret line="600" column="7" lean-forward="false" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4349#4354#0" expanded="true" />
+            <element signature="e#6032#6037#0" expanded="true" />
+            <element signature="e#7111#7116#0" expanded="true" />
+            <element signature="e#11915#11920#0" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#section#0;n#article#0;n#section#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#22157#22162#0" expanded="true" />
+            <element signature="e#28756#28761#0" expanded="true" />
+            <element signature="e#36415#36421#0" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#li#0;n#ul#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#45189#45194#0" expanded="true" />
+            <element signature="e#46819#46824#0" expanded="true" />
+            <element signature="e#47591#47596#0" expanded="true" />
+            <element signature="n#style#0;n#dl#1;n#li#11;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dl#2;n#li#11;n#ul#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#p#1;n#li#19;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="113" column="23" lean-forward="false" selection-start-line="113" selection-start-column="23" selection-end-line="113" selection-end-column="23" />
+        <state relative-caret-position="366">
+          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
+    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="23" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="23" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ins#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#ins#0;n#ins#0;n#ins#0;n#div#0;n#div#1;n#div#0;n#section#0;n#article#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#!!top" expanded="true" />
-            <element signature="e#13229#13234#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/tuoitre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="114" column="68" lean-forward="false" selection-start-line="114" selection-start-column="68" selection-end-line="114" selection-end-column="68" />
-          <folding>
-            <element signature="e#5933#6653#0" expanded="false" />
-            <marker date="1501182939576" expanded="true" signature="6127:6609" ph="..." />
-            <marker date="1501182939576" expanded="true" signature="6134:6551" ph="..." />
-            <marker date="1501182939576" expanded="true" signature="6198:6543" ph="..." />
-            <marker date="1501182939576" expanded="true" signature="6214:6276" ph="{...}" />
-            <marker date="1501182939576" expanded="true" signature="6289:6381" ph="{...}" />
-            <marker date="1501182939576" expanded="true" signature="6395:6457" ph="{...}" />
-            <marker date="1501182939576" expanded="true" signature="6509:6531" ph="{...}" />
-            <marker date="1501182939576" expanded="true" signature="6558:6601" ph="..." />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="36" column="77" lean-forward="false" selection-start-line="36" selection-start-column="77" selection-end-line="36" selection-end-column="77" />
+          <folding />
         </state>
       </provider>
     </entry>
