@@ -16,7 +16,7 @@ module.exports = {
             db.collection(CollName).deleteMany(query, function (err, result) {
                 var strDate = new String(new Date());
                 if (err) throw err;
-                content.pubDate = {
+                content.prototype.pubDate = {
                     // second: new Date().getSeconds(),
                     // minute: new Date().getMinutes(),
                     // hour: new Date().getHours(),
@@ -33,7 +33,7 @@ module.exports = {
                     thang: strDate.split("T")[0].split(" ")[1],
                     nam: strDate.split("T")[0].split(" ")[3],
                 }
-                console.log("-----------------> " + JSON.stringify(content.pubDate));
+
                 db.collection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
                     callback();
