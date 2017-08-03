@@ -1,39 +1,21 @@
 var Mongo = require('../config/MongoConnect');
 var CollName = 'MoTaNgan'
-// var strDate = new String(new Date());
-// var pubDate = {
-//     giay: strDate.split("T")[0].split(" ")[4].split(":")[2],
-//     phut: strDate.split("T")[0].split(" ")[4].split(":")[1],
-//     gio: strDate.split("T")[0].split(" ")[4].split(":")[0],
-//     thu: strDate.split("T")[0].split(" ")[0],
-//     ngay: strDate.split("T")[0].split(" ")[2],
-//     thang: strDate.split("T")[0].split(" ")[1],
-//     nam: strDate.split("T")[0].split(" ")[3],
-// }
+
 module.exports = {
     insertOne: function (content, query, callback) {
         Mongo(function (db) {
             db.collection(CollName).deleteMany(query, function (err, result) {
-                var strDate = new String(new Date());
                 if (err) throw err;
-                content.prototype.pubDate = {
-                    // second: new Date().getSeconds(),
-                    // minute: new Date().getMinutes(),
-                    // hour: new Date().getHours(),
-                    // day: new Date().getDay(),
-                    // month: new Date().getMonth(),
-                    // year: new Date().getYear(),
-                    // fullYear: new Date().getFullYear(),
-
-                    giay: strDate.split("T")[0].split(" ")[4].split(":")[2],
-                    phut: strDate.split("T")[0].split(" ")[4].split(":")[1],
-                    gio: strDate.split("T")[0].split(" ")[4].split(":")[0],
-                    thu: strDate.split("T")[0].split(" ")[0],
-                    ngay: strDate.split("T")[0].split(" ")[2],
-                    thang: strDate.split("T")[0].split(" ")[1],
-                    nam: strDate.split("T")[0].split(" ")[3],
+                var date = new Date();
+                var path = date.toISOString().split("Z")[0].split("T");
+                content.pubDate = {
+                    phut: path[1].split(":")[0],
+                    gio: path[1].split(":")[1],
+                    ngay: path[0].split("-")[2],
+                    thang: path[0].split("-")[1],
+                    nam: path[0].split("-")[0],
                 }
-
+                console.log(JSON.stringify( content.pubDate ));
                 db.collection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
                     callback();
