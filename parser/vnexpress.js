@@ -101,6 +101,7 @@ var jsdom = require("jsdom/lib/old-api.js");
 module.exports = function (index) {
     var ArrayMotaNgan = [];
     var ArrayNoiDung = [];
+
     function chayCategory(indexCategory) {
         var linkCategory = listCate.item[indexCategory].link // lấy link một mục trên rss
         console.log("Chạy thể loại : " + listCate.item[indexCategory].name)
@@ -132,103 +133,57 @@ module.exports = function (index) {
 
                             }// for
                             console.log(`ArrayMotaNgan ${ArrayMotaNgan.length}`);
-                            var MoTaNganHave=[]
+                            var MoTaNganHave = []
+
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
-                                        try {
-                                            var content = window.$("#left_calculator").html();
-                                            var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
-                                            console.log(indexMoTaNgan+" "+title);
-                                            if (content == undefined) {
-                                                content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
-                                                s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
-                                                s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
-                                                s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
-                                                s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
-                                                linkVideo = s720;
-                                                if (linkVideo == '') linkVideo = s480;
-                                                else if (linkVideo == '') linkVideo = s360;
-                                                else if (linkVideo == '') linkVideo = s240;
-                                                content = `<video src="${linkVideo}" controls></video>`
-                                            }
-                                            var contents = {
-                                                linkContents: objMoTaNgan.linkContents,
-                                                contentHTML: `
-                    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        video {
-            width: 100%;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-        table{
-            width: 100%;
-            margin: auto;
-        }
-          .block_timer_share{
-            display: none;
-        }
-        .block_timer {
-            display: none;
-        }
-        .social_share {
-            display: none;
-        }
-        .xemthem_new_ver  {
-            display: none;
-        }
-        .title_news{
-            display: none;
-        }
-        #box_tinlienquan{
-            display: none;
-        }
-        .relative_new{
-            display: none;
-        }
-          .block_goithutoasoan{
-            display: none;
-        }
-    </style>
-</head>
-<body>${title}${content}</body>
-</html>`,
-                                            }
-                                            ArrayNoiDung.push(contents);
-                                            MoTaNganHave.push(objMoTaNgan)
-                                            if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
-                                            else if (indexCategory < sizeCategory - 1) {
-                                                for (indexNoiDung in ArrayNoiDung) {
-                                                    noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
-                                                    });// noidung.insertOne
-                                                }// for (indexNoiDung in ArrayNoiDung){
-                                                for (indexMoTaNganHave in MoTaNganHave) {
-                                                    motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
-                                                    });// noidung.insertOne
-                                                }
-                                                MoTaNganHave=[]
-                                                ArrayNoiDung = [];
-                                                ArrayMotaNgan = [];
-                                                // chayCategory(indexCategory + 1)
-                                            }// else if
-                                        } catch (e) {
-                                            if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
-                                            else if (indexCategory < sizeCategory - 1) {
-                                                ArrayNoiDung = [];
-                                                ArrayMotaNgan = [];
-                                                // chayCategory(indexCategory + 1)
-                                            }// else if
+                                    try {
+                                        var content = window.$("body").html();
+                                        var title = `<h1>${objMoTaNgan.title}</h1>`
+                                        console.log(indexMoTaNgan + " " + title);
+                                if (content == undefined) {
+                                            content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
+                                            s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
+                                            s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
+                                            s480 = new String(content.replace("=", "") + "}").split(`s480: '`)[1].split(`',`)[0]
+                                            s720 = new String(content.replace("=", "") + "}").split(`s720: '`)[1].split(`',`)[0]
+                                            linkVideo = s720;
+                                            if (linkVideo == '') linkVideo = s480;
+                                            else if (linkVideo == '') linkVideo = s360;
+                                            else if (linkVideo == '') linkVideo = s240;
+                                            content = `<video src="${linkVideo}" controls></video>`
                                         }
-                                    });
+                                        var contents = {
+                                            linkContents: objMoTaNgan.linkContents,
+                                            contentHTML: `${title}${content}`,
+                                        }
+                                        ArrayNoiDung.push(contents);
+                                        MoTaNganHave.push(objMoTaNgan)
+                                        if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
+                                        else if (indexCategory < sizeCategory - 1) {
+                                            for (indexNoiDung in ArrayNoiDung) {
+                                                noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
+                                                });// noidung.insertOne
+                                            }// for (indexNoiDung in ArrayNoiDung){
+                                            for (indexMoTaNganHave in MoTaNganHave) {
+                                                motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
+                                                });// noidung.insertOne
+                                            }
+                                            MoTaNganHave = []
+                                            ArrayNoiDung = [];
+                                            ArrayMotaNgan = [];
+                                            // chayCategory(indexCategory + 1)
+                                        }// else if
+                                    } catch (e) {
+                                        if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
+                                        else if (indexCategory < sizeCategory - 1) {
+                                            ArrayNoiDung = [];
+                                            ArrayMotaNgan = [];
+                                            // chayCategory(indexCategory + 1)
+                                        }// else if
+                                    }
+                                });
                             }//function getHTML
                             getHTML(0);
                         }

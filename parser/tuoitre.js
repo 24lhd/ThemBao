@@ -123,47 +123,12 @@ module.exports = function (index) {
                                         //
                                         if (linkVideo != '') linkVideo = `<video src="${linkVideo}" controls></video>`
                                         else linkVideo = '';
-                                        var title = `<h1>${window.$("title").html().split("-")[0]}</h1>`
+                                        var title = `<h1>${objMoTaNgan.title}</h1>`
                                         console.log(`${indexMoTaNgan + title}`)
-                                        // console.log(`${content}`)
 
-                                        // console.log(`-------------------------------------${linkVideo}`)
                                         var contents = {
-
                                             linkContents: ArrayMotaNgan[indexMoTaNgan].linkContents,
-                                            contentHTML: `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        video {
-            width: 100%;
-            margin: auto;
-        }
-        img {
-            width: 100%;
-            display: block;
-            margin: 0 auto;
-        }
-        table{
-            width: 100%;
-            margin: auto;
-        }
-.tool-bar,.title-2,.block-key,.highlight,.wrapPopup{
-    display: none;
-}
-    </style>
-</head>
-<body>
-${title}
-
-
-${content}
-${linkVideo}
-</body>
-</html>`
+                                            contentHTML: `${title}${content}${linkVideo}`
                                         }
                                         ArrayNoiDung.push(contents);
                                         MoTaNganHave.push(objMoTaNgan)

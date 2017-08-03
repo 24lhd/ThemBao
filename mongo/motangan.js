@@ -9,8 +9,8 @@ module.exports = {
                 var date = new Date();
                 var path = date.toISOString().split("Z")[0].split("T");
                 content.pubDate = {
-                    phut: path[1].split(":")[0],
-                    gio: path[1].split(":")[1],
+                    phut: path[1].split(":")[1],
+                    gio: path[1].split(":")[0],
                     ngay: path[0].split("-")[2],
                     thang: path[0].split("-")[1],
                     nam: path[0].split("-")[0],
