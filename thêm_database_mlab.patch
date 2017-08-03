@@ -1,0 +1,194 @@
+Index: mongo/motangan.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- mongo/motangan.js	(date 1501629612000)
++++ mongo/motangan.js	(revision )
+@@ -16,7 +16,7 @@
+             db.collection(CollName).deleteMany(query, function (err, result) {
+                 var strDate = new String(new Date());
+                 if (err) throw err;
+-                content.pubDate = {
++                content.prototype.pubDate = {
+                     // second: new Date().getSeconds(),
+                     // minute: new Date().getMinutes(),
+                     // hour: new Date().getHours(),
+@@ -33,7 +33,7 @@
+                     thang: strDate.split("T")[0].split(" ")[1],
+                     nam: strDate.split("T")[0].split(" ")[3],
+                 }
+-                console.log("-----------------> " + JSON.stringify(content.pubDate));
++
+                 db.collection(CollName).insertOne(content, function (err, res) {
+                     if (err) throw err;
+                     callback();
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1501629612000)
++++ .idea/workspace.xml	(revision )
+@@ -3,6 +3,7 @@
+   <component name="ChangeListManager">
+     <list default="true" id="44af5e62-4d69-49fb-81fc-b3eb90191c08" name="Default" comment="">
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/www" afterPath="$PROJECT_DIR$/bin/www" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mongo/motangan.js" afterPath="$PROJECT_DIR$/mongo/motangan.js" />
+     </list>
+     <ignored path="$PROJECT_DIR$/.tmp/" />
+@@ -20,11 +21,11 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file leaf-file-name="www" pinned="false" current-in-tab="false">
++      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/bin/www">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="366">
+-              <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
++            <state relative-caret-position="250">
++              <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+               <folding />
+             </state>
+           </provider>
+@@ -33,7 +34,7 @@
+       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/public/index.html">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="457">
++            <state relative-caret-position="10200">
+               <caret line="600" column="7" lean-forward="false" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
+               <folding>
+                 <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+@@ -94,11 +95,11 @@
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="motangan.js" pinned="false" current-in-tab="true">
++      <file leaf-file-name="motangan.js" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="170">
+-              <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
++            <state relative-caret-position="119">
++              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+               <folding />
+             </state>
+           </provider>
+@@ -183,8 +184,8 @@
+         <option value="$PROJECT_DIR$/parser/vnexpress.js" />
+         <option value="$PROJECT_DIR$/parser/tuoitre.js" />
+         <option value="$PROJECT_DIR$/public/index.html" />
+-        <option value="$PROJECT_DIR$/bin/www" />
+         <option value="$PROJECT_DIR$/config/MongoConnect.js" />
++        <option value="$PROJECT_DIR$/bin/www" />
+         <option value="$PROJECT_DIR$/mongo/motangan.js" />
+       </list>
+     </option>
+@@ -508,7 +509,9 @@
+       <workItem from="1501399109411" duration="611000" />
+       <workItem from="1501460033612" duration="131000" />
+       <workItem from="1501484584708" duration="55000" />
+-      <workItem from="1501623940806" duration="2282000" />
++      <workItem from="1501623940806" duration="2802000" />
++      <workItem from="1501655745714" duration="600000" />
++      <workItem from="1501665340836" duration="169000" />
+     </task>
+     <task id="LOCAL-00001" summary="thay đổi tý">
+       <created>1500565162234</created>
+@@ -832,11 +835,18 @@
+       <option name="project" value="LOCAL" />
+       <updated>1501629421860</updated>
+     </task>
+-    <option name="localTasksCounter" value="47" />
++    <task id="LOCAL-00047" summary="thêm database mlab">
++      <created>1501629612839</created>
++      <option name="number" value="00047" />
++      <option name="presentableId" value="LOCAL-00047" />
++      <option name="project" value="LOCAL" />
++      <updated>1501629612839</updated>
++    </task>
++    <option name="localTasksCounter" value="48" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="101223000" />
++    <option name="totallyTimeSpent" value="102512000" />
+   </component>
+   <component name="TodoView">
+     <todo-panel id="selected-file">
+@@ -850,12 +860,12 @@
+   <component name="ToolWindowManager">
+     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+     <layout>
+-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21486989" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
++      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2141264" sideWeight="0.49380806" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.50619197" order="2" side_tool="true" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43064517" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5451613" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46612903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+@@ -1245,7 +1255,7 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/public/index.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="457">
++        <state relative-caret-position="10200">
+           <caret line="600" column="7" lean-forward="false" selection-start-line="600" selection-start-column="7" selection-end-line="600" selection-end-column="7" />
+           <folding>
+             <element signature="n#style#0;n#iframe#0;n#noscript#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+@@ -1269,10 +1279,10 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bin/www">
++    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="366">
+-          <caret line="116" column="0" lean-forward="false" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
++        <state relative-caret-position="68">
++          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
+           <folding />
+         </state>
+       </provider>
+@@ -1301,18 +1311,18 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/config/MongoConnect.js">
++    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="68">
+-          <caret line="4" column="49" lean-forward="true" selection-start-line="4" selection-start-column="49" selection-end-line="4" selection-end-column="49" />
++        <state relative-caret-position="119">
++          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/mongo/motangan.js">
++    <entry file="file://$PROJECT_DIR$/bin/www">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="170">
+-          <caret line="36" column="20" lean-forward="false" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
++        <state relative-caret-position="250">
++          <caret line="115" column="5" lean-forward="true" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+           <folding />
+         </state>
+       </provider>
+Index: bin/www
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- bin/www	(date 1501629612000)
++++ bin/www	(revision )
+@@ -114,21 +114,21 @@
+         thang: strDate.split("T")[0].split(" ")[1],         nam: strDate.split("T")[0].split(" ")[3],     }-+    console.log("-----------------> " + JSON.stringify(pubDate));     try {         require('../parser/vnexpress')(parseInt(new Date().getMinutes()));     } catch (e) {         // console.log(e);-        console.log(`Lỗi tại phút ${parseInt(new Date().getMinutes())}`);+        // console.log(`Lỗi tại phút ${parseInt(new Date().getMinutes())}`);     }     try {         require('../parser/tuoitre')(parseInt(new Date().getMinutes()));     } catch (e) {         // console.log(e);-        console.log(`Lỗi tại phút ${parseInt(new Date().getMinutes())}`);+        // console.log(`Lỗi tại phút ${parseInt(new Date().getMinutes())}`);     } });-require('../parser/vnexpress')(0);-require('../parser/tuoitre')(0);+// require('../parser/vnexpress')(0);+// require('../parser/tuoitre')(0);+ -
+\ No newline at end of file
