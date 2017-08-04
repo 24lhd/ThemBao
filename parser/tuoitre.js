@@ -112,46 +112,62 @@ module.exports = function (index) {
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
-                                        var content;
-                                        try {
-                                            content = window.$("body").html();
-                                        } catch (e) {
-                                            content = ""
-                                        }
-                                        var linkVideo = '';
-                                        try {
-                                            console.log(objMoTaNgan.linkContents)
-                                            console.log(`---------------------${window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]}`)
-                                            linkVideo = window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]
-                                        } catch (e) {
-                                        }
-                                        //
-                                        if (linkVideo != '') linkVideo = `<video src="${linkVideo}" controls></video>`
-                                        else linkVideo = '';
-                                        var title = `<h1>${objMoTaNgan.title}</h1>`
-                                        console.log(`${indexMoTaNgan + title}`)
-
-                                        var contents = {
-                                            linkContents: ArrayMotaNgan[indexMoTaNgan].linkContents,
-                                            contentHTML: `${title}${content}${linkVideo}`
-                                        }
-                                        ArrayNoiDung.push(contents);
-                                        MoTaNganHave.push(objMoTaNgan)
-                                        if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
-                                        else if (indexCategory < sizeCategory - 1) {
-                                            for (indexNoiDung in ArrayNoiDung) {
-                                                noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
-                                                });// noidung.insertOne
-                                            }// for (indexNoiDung in ArrayNoiDung){
-                                            for (indexMoTaNganHave in MoTaNganHave) {
-                                                motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
-                                                });// noidung.insertOne
-                                            }
-                                            MoTaNganHave = []
-                                            ArrayNoiDung = [];
-                                            ArrayMotaNgan = [];
-                                            // chayCategory(indexCategory + 1)
-                                        }// else if
+                                      try {
+                                          var content;
+                                          try {
+                                              content = window.$("body").html();
+                                          } catch (e) {
+                                          }
+                                          var linkVideo = '';
+                                          try {
+                                              console.log(objMoTaNgan.linkContents)
+                                              console.log(`---------------------${window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]}`)
+                                              linkVideo = window.$("script").text().split("mp4: [\"")[1].split(`"]`)[0]
+                                          } catch (e) {
+                                          }
+                                          //
+                                          if (linkVideo != '') linkVideo = `<video src="${linkVideo}" controls></video>`
+                                          else linkVideo = '';
+                                          var title = `<h1>${objMoTaNgan.title}</h1>`
+                                          console.log(`${indexMoTaNgan + title}`)
+                                          var contents = {
+                                              linkContents: ArrayMotaNgan[indexMoTaNgan].linkContents,
+                                              contentHTML: `${title}${content}${linkVideo}`
+                                          }
+                                          ArrayNoiDung.push(contents);
+                                          MoTaNganHave.push(objMoTaNgan)
+                                          if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
+                                          else if (indexCategory < sizeCategory - 1) {
+                                              for (indexNoiDung in ArrayNoiDung) {
+                                                  noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
+                                                  });// noidung.insertOne
+                                              }// for (indexNoiDung in ArrayNoiDung){
+                                              for (indexMoTaNganHave in MoTaNganHave) {
+                                                  motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
+                                                  });// noidung.insertOne
+                                              }
+                                              MoTaNganHave = []
+                                              ArrayNoiDung = [];
+                                              ArrayMotaNgan = [];
+                                              // chayCategory(indexCategory + 1)
+                                          }// else if
+                                      }catch (ex){
+                                          if (indexMoTaNgan < ArrayMotaNgan.length - 1) getHTML(indexMoTaNgan + 1);
+                                          else if (indexCategory < sizeCategory - 1) {
+                                              for (indexNoiDung in ArrayNoiDung) {
+                                                  noidung.insertOne(ArrayNoiDung[indexNoiDung], {"linkContents": ArrayNoiDung[indexNoiDung].linkContents}, function () {
+                                                  });// noidung.insertOne
+                                              }// for (indexNoiDung in ArrayNoiDung){
+                                              for (indexMoTaNganHave in MoTaNganHave) {
+                                                  motangan.insertOne(MoTaNganHave[indexMoTaNganHave], {"linkContents": MoTaNganHave[indexMoTaNganHave].linkContents}, function () {
+                                                  });// noidung.insertOne
+                                              }
+                                              MoTaNganHave = []
+                                              ArrayNoiDung = [];
+                                              ArrayMotaNgan = [];
+                                              // chayCategory(indexCategory + 1)
+                                          }// else if
+                                      }
 
                                     }
                                 )
