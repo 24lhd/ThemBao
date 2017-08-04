@@ -19,7 +19,7 @@ module.exports = {
                 db.collection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
                     callback();
-                    console.log("Query chèn mô tả " + JSON.stringify(query))
+                    // console.log("Query chèn mô tả " + JSON.stringify(query))
                     db.close();
                 });
             })

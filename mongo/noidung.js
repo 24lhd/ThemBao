@@ -7,7 +7,7 @@ module.exports = {
                 if (err) throw err;
                 db.collection(CollName).insertOne(content, function (err, res) {
                     if (err) throw err;
-                    console.log("Query chèn Nội dung "+JSON.stringify(query))
+                    // console.log("Query chèn Nội dung "+JSON.stringify(query))
                     callback();
                     db.close();
                 });
