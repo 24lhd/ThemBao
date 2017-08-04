@@ -112,7 +112,12 @@ module.exports = function (index) {
                             function getHTML(indexMoTaNgan) {
                                 var objMoTaNgan = ArrayMotaNgan[indexMoTaNgan];
                                 jsdom.env(objMoTaNgan.linkContents, ["http://code.jquery.com/jquery.js"], function (err, window) {
-                                        var content = window.$("body").html();
+                                        var content;
+                                        try {
+                                            content = window.$("body").html();
+                                        } catch (e) {
+                                            content = ""
+                                        }
                                         var linkVideo = '';
                                         try {
                                             console.log(objMoTaNgan.linkContents)

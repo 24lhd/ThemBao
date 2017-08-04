@@ -142,7 +142,7 @@ module.exports = function (index) {
                                         var content = window.$("body").html();
                                         var title = `<h1>${objMoTaNgan.title}</h1>`
                                         console.log(indexMoTaNgan + " " + title);
-                                if (content == undefined) {
+                                        if (content == undefined) {
                                             content = window.$("script").text().split("VideoVNE.config_play")[1].split("};")[0];
                                             s240 = new String(content.replace("=", "") + "}").split(`s240: '`)[1].split(`',`)[0]
                                             s360 = new String(content.replace("=", "") + "}").split(`s360: '`)[1].split(`',`)[0]
